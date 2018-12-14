@@ -1,7 +1,7 @@
 <?php
 include 'Tools/database.php';
 require 'Tools/fonction.php';
-compter_visite();
+//compter_visite();
 
 ?>
 <!DOCTYPE html>
@@ -14,7 +14,7 @@ compter_visite();
 
     <link rel="icon" href="assets/img/fvicon.png" type="image/x-icon" />
 
-    <title><?php echo $title; ?> | Paiement sécrurisé au Bénin</title>
+    <title><?php echo $title; ?> | <?php echo ma_tra("Paiement sécrurisé au Bénin");?></title>
 
     <!-- Icon css link -->
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
@@ -75,7 +75,7 @@ compter_visite();
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index"><img style="max-width: 120px;" src="assets/img/logof.png" alt=""></a>
+                    <a class="navbar-brand" href="index"><img style="max-width: 100px;" src="assets/img/logof.png" alt=""></a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -84,10 +84,10 @@ compter_visite();
 
                     <ul class="nav navbar-nav pull-right">
 
-                        <li class="noti__item js-item-menu">
-                            <a href="#" style="color: #0d1c3f;font-weight: 700;" >SOLUTIONS</a>
+                        <li class="js-item-menu">
+                            <a href="#" style="color: #0d1c3f;font-weight: 700;" ><?php echo ma_tra("SOLUTIONS")?></a>
                             <ul class="mess-dropdown js-dropdown row" style="padding: 30px">
-                                <div class="satisfaction_item_inner">
+                                <div class="">
                                     <div style="display: block" class="row">
                                         <div class="col-md-3">
                                             <div class="satisfaction_item">
@@ -97,8 +97,8 @@ compter_visite();
                                             </div>
                                         </div>
                                        <div class="co-md-9">
-                                               <a href="#"><h4 style="padding-bottom: 0">PAIEMENTS</h4></a>
-                                               <p>Un outil complet pour les développeurs, facile à intégrer</p>
+                                               <a href="#"><h4 style="padding-bottom: 0"><?php echo ma_tra("PAIEMENTS")?></h4></a>
+                                               <p><?php echo ma_tra("Un outil complet pour les développeurs, facile à intégrer")?></p>
                                        </div>
                                     </div>
 
@@ -111,8 +111,8 @@ compter_visite();
                                             </div>
                                         </div>
                                         <div class="co-md-9">
-                                            <a href="#"><h4 style="padding-bottom: 0">FACTURATION</h4></a>
-                                            <p>Un outil qui permet d'établir une facture à vos clients en un clic</p>
+                                            <a href="#"><h4 style="padding-bottom: 0"><?php echo ma_tra("FACTURATION")?></h4></a>
+                                            <p><?php echo ma_tra("Un outil qui permet d'établir une facture à vos clients en un clic")?></p>
                                         </div>
                                     </div>
 
@@ -121,31 +121,77 @@ compter_visite();
                         </li>
 
                         <li  class="">
-                            <a href="#" style="color: #0d1c3f;font-weight: 700;" class="lip">E-COMMERCE</a>
+                            <a href="#" style="color: #0d1c3f;font-weight: 700;" class="lip"><?php echo ma_tra("E-COMMERCE")?></a>
                         </li>
 
-                        <li  class="<?php if($title == "Partenaires/Développeurs") echo "active" ?>">
-                            <a href="developpeur" style="color: #0d1c3f;font-weight: 700;" class="lip">PARTENAIRES & API </a>
+                        <li  class="<?php if($title == ma_tra("Partenaires/Développeurs") ) echo "active" ?>">
+                            <a href="developpeur" style="color: #0d1c3f;font-weight: 700;" class="lip"><?php echo ma_tra("PARTENAIRES & API")?> </a>
                         </li>
-                        <li class="<?php if($title == "Tarifs") echo "active" ?>">
-                            <a href="tarif" class="lip" style="color: #0d1c3f;font-weight: 700;">TARIFS</a>
+                        <li class="<?php if($title == ma_tra("Tarifs") ) echo "active" ?>">
+                            <a href="tarif" class="lip" style="color: #0d1c3f;font-weight: 700;"><?php echo ma_tra("TARIFS")?></a>
                         </li>
                         <li class="<?php if($title == "Support") echo "active" ?>">
-                            <a href="support" class="lip" style="color: #0d1c3f;font-weight: 700;">FAQ & SUPPORTS</a></li>
+                            <a href="support" class="lip" style="color: #0d1c3f;font-weight: 700;"><?php echo ma_tra("FAQ & SUPPORTS") ?></a></li>
 
                         <li class="nav-item ">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img style="max-width: 20px;" src="assets/img/france.png">
+                                <?php
+                                if(isset($_COOKIE["lang"]))
+                                {
+                                    if($_COOKIE["lang"] == "en_US")
+                                    {
+                                        echo '<img style="max-width: 20px;" src="assets/img/engl.png">';
+                                    }elseif ($_COOKIE["lang"] == "fr_FR")
+                                    {
+                                        echo '<img style="max-width: 20px;" src="assets/img/france.png">';
+                                    }
+                                }else{
+                                    echo '<img style="max-width: 20px;" src="assets/img/france.png">';
+                                }
+
+                                ?>
+
+
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item"  href="#"><img style="max-width: 30px;" src="assets/img/engl.png"> <span style="margin-left:10px">English</span></a>
+
+                                    <?php
+                                    if(isset($_COOKIE["lang"]))
+                                    {
+                                        if($_COOKIE["lang"] == "en_US")
+                                        {
+                                            echo '<a class="dropdown-item"  href="javascript:lange(\'fr_FR\')">';
+                                            echo '<img style="max-width: 30px;" src="assets/img/france.png">';
+                                            echo '<span style="margin-left:10px">French</span>';
+                                            echo '</a>';
+                                        }elseif ($_COOKIE["lang"] == "fr_FR")
+                                        {
+                                            echo '<a class="dropdown-item"  href="javascript:lange(\'en_US\')">';
+                                            echo '<img style="max-width: 30px;" src="assets/img/engl.png">';
+                                            echo '<span style="margin-left:10px">Anglais</span>';
+                                            echo '</a>';
+                                        }
+                                    }else{
+                                        echo '<a class="dropdown-item"  href="javascript:lange(\'en_US\')">';
+                                        echo '<img style="max-width: 30px;" src="assets/img/engl.png">';
+                                        echo '<span style="margin-left:10px">Anglais</span>';
+                                        echo '</a>';
+                                    }
+
+                                    ?>
+
+
+
                             </div>
                         </li>
 
-                        <li class="<?php if($title == "Accédez à votre compte") echo "active" ?>">
+                        <li class="<?php if($title == ma_tra("Accédez à votre compte")) echo "active" ?>">
                             <a  href="http://dashboard.gandokintche.com/login?return=true" class="lip" style="color: #0d1c3f;font-weight: 700;">
-                                Accédez à votre compte <span>
-                                    <i class="fa fa-arrow-right"></i> </span></a>
+                                <?php echo ma_tra("Accédez à votre compte")?>
+                                <span>
+                                    <i class="fa fa-arrow-right"></i>
+                                </span>
+                            </a>
                         </li>
                     </ul>
                 </div><!-- /.navbar-collapse -->

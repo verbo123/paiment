@@ -1,5 +1,6 @@
 <?php
-$title="Accueil";
+require 'localization.php';
+$title=ma_tra("Accueil");
 require 'pages/includes/htmlheader.php';
 ?>
 
@@ -152,10 +153,10 @@ require 'pages/includes/htmlheader.php';
             <span style="color:#e0c3fc;">Gandokin</span><span style="color: #8ec5fc">Tche</span></h1>
 
            <!--  <img style="max-width: 120px;" src="assets/img/logof.png" alt=""> -->
-            <h2 style="font-size: 25px">Le système de paiement, <br> en ligne sécurisé au Bénin</h2>
+            <h2 style="font-size: 25px"><?php echo ma_tra("Le système de paiement,") ?><br> <?php echo ma_tra("en ligne sécurisé au Bénin") ?></h2>
             <div style="margin-top: 50px;" class="call-to-action">
                 <button style="width: 300px; height: 50px"  class="ouvrir btn submint_btn form-control">
-                    Ouvrir un compte gratuitement
+                    <?php echo ma_tra("Ouvrir un compte gratuitement") ;?>
                 </button>
             </div>
 
@@ -175,18 +176,14 @@ require 'pages/includes/htmlheader.php';
             <div class="tit">
                 <span style="font-size: 30px;font-family: 'Pacifico'; display:none">
                 <span style="color:#e0c3fc;">Gandokin</span><span style="color: #8ec5fc">Tche : </span> </span>
-                <span style="color: #0d1c3f;font-size:25px;font-weight: 600;">Une solution simple et sûr pour être payé et se faire payer partout au Bénin</span>
+                <span style="color: #0d1c3f;font-size:25px;font-weight: 600;"><?php echo ma_tra("Une solution simple et sûr pour être payé et se faire payer partout au Bénin") ?></span>
             </div>
             <h2></h2>
 
 
-            <p> 
-                Grâce à GandokinTché, nous construisons une économie rapide basée sur un système complet et surtout adaptés aux réalités de son environnement.
-                Nous mettons à disposition des Entrepreneurs du Bénin et du continents où qu'ils soient des outils flexibles pour le commerce en ligne.
-                 Que vous lanciez un business SaaS,
-                une place de marché sur demande, un site e-commerce ou une plateforme de
-                crowdfunding, l'API GandokinTché vous offre une facilité d’intégration et des 
-                nouvelles fonctionnalités sans équivalent ceci pour vous permettre de créer les meilleurs produits pour vos clients.
+            <p>
+                <?php
+               echo ma_tra("Grâce à GandokinTché, nous construisons une économie rapide basée sur un système complet et surtout adaptés aux réalités de son environnement.Nous mettons à disposition des Entrepreneurs du Bénin et du continents où qu'ils soient des outils flexibles pour le commerce en ligne.Que vous lanciez un business SaaS,une place de marché sur demande, un site e-commerce ou une plateforme de crowdfunding, l'API GandokinTché vous offre une facilité d’intégration et des nouvelles fonctionnalités sans équivalent ceci pour vous permettre de créer les meilleurs produits pour vos clients.");?>
             </p>
 
         </div>
@@ -197,22 +194,26 @@ require 'pages/includes/htmlheader.php';
                         <div class="round_icon">
                             <i class="fa fa-money"></i>
                         </div>
-                        <a href="#"><h4>PAIEMENTS</h4></a>
-                        <p>Payé désormais vos achats en ligne et depuis chez vous en 
-                        seulement quelques clics et faites-vous livrés vos achats à un point 
-                        relais proche de chez vous pour encore plus de faciliter au quotidien.
-                         <a style="font-size: 12px;" href="#" class="badge badge-pill badge-primary"> Voir Plus...  </a>
+                        <a href="#"><h4><?php echo ma_tra("PAIEMENTS") ?></h4></a>
+                        <p>
+                            <?php
+                            echo ma_tra("Payé désormais vos achats en ligne et depuis chez vous en seulement quelques clics et faites-vous livrés vos achats à un point relais proche de chez vous pour encore plus de faciliter au quotidien.");
+                        ?>
+<!--                         <a style="font-size: 12px;" href="#" class="badge badge-pill badge-primary"> Voir Plus...  </a>-->
                          </p>
                     </div>
                     <div class="app_feature_item">
                         <div class="round_icon">
                             <i class="fa fa-dollar"></i>
                         </div>
-                        <a href="#"><h4>FACTURATIONS</h4></a>
-                        <p>Une facturation automatisée pour une comptabilité propre 
-                        garantissant une progression claire de votre chiffre d’affaire. 
-                        Nous vous accompagnons dans toutes les étapes de votre activité avec un seul but : 
-                        <b> la croissance de votre business. </b><a style="font-size: 12px;" href="#" class="badge badge-pill badge-primary"> Voir Plus...  </a></p>
+                        <a href="#"><h4><?php echo ma_tra("FACTURATIONS"); ?></h4></a>
+                        <p>
+                            <?php
+                            echo ma_tra("Une facturation automatisée pour une comptabilité propre garantissant une progression claire de votre chiffre d’affaire. Nous vous accompagnons dans toutes les étapes de votre activité avec un seul but :")
+                            ?>
+                        <b> <?php echo ma_tra("la croissance de votre business."); ?> </b>
+<!--                            <a style="font-size: 12px;" href="#" class="badge badge-pill badge-primary"> Voir Plus...  </a>-->
+                        </p>
                     </div>
                 </div>
             </div>
@@ -241,10 +242,10 @@ require 'pages/includes/htmlheader.php';
                     <div class="round_icon">
                         <i class="fa fa-simplybuilt"></i>
                     </div>
-                    <a href="#"><h4>TARIFS</h4></a>
+                    <a href="#"><h4><?php echo ma_tra("TARIFS"); ?></h4></a>
                     <p>
-                       Une commission simple et fixe sans aucun risque de variation donc sans surprise pour les utilisateurs. 
-<a style="font-size: 12px;" href="#" class="badge badge-pill badge-primary"> Voir Plus...  </a>
+                       <?php echo ma_tra("Une commission simple et fixe sans aucun risque de variation donc sans surprise pour les utilisateurs.") ?>
+<!--<a style="font-size: 12px;" href="#" class="badge badge-pill badge-primary"> Voir Plus...  </a>-->
                     </p>
                 </div>
             </div>
@@ -254,20 +255,26 @@ require 'pages/includes/htmlheader.php';
                         <div class="round_icon">
                             <i class="fa fa-code"></i>
                         </div>
-                        <a href="#"><h4>API/Développeurs</h4></a>
-                        <p> Nous travaillons sans relâche pour vous proposer 
-                        des solutions simples, flexibles et élégantes autour du paiement en ligne et mobile. 
-                            <a style="font-size: 12px;" href="#" class="badge badge-pill badge-primary"> Voir Plus...  </a>
+                        <a href="#"><h4><?php echo ma_tra("API/Développeurs") ?></h4></a>
+                        <p>
+                            <?php
+                            echo ma_tra("Nous travaillons sans relâche pour vous proposer des solutions simples, flexibles et élégantes autour du paiement en ligne et mobile."); ?>
+<!--                            <a style="font-size: 12px;" href="#" class="badge badge-pill badge-primary"> Voir Plus...  </a>-->
                         </p>
                     </div>
                     <div class="app_feature_item">
                         <div class="round_icon">
                             <i class="fa fa-users"></i>
                         </div>
-                        <a href="#"><h4>FONCTIONNALITES</h4></a>
+                        <a href="#">
+                            <h4>
+                                <?php
+                                echo ma_tra("FONCTIONNALITES") ?>
+                            </h4>
+                        </a>
                         <p>
-                            Faites des virements, des paiements et des transferts simples ou groupés, sans erreurs, rapidement avec le sourire aux lèvres. 
-                             <a style="font-size: 12px;" href="#" class="badge badge-pill badge-primary"> Voir Plus...  </a>
+                            <?php echo ma_tra("Faites des virements, des paiements et des transferts simples ou groupés, sans erreurs, rapidement avec le sourire aux lèvres.") ?>
+<!--                             <a style="font-size: 12px;" href="#" class="badge badge-pill badge-primary"> Voir Plus...  </a>-->
                         </p>
                     </div>
                 </div>
@@ -295,9 +302,11 @@ require 'pages/includes/htmlheader.php';
                         </div>
                     </div>
                     <div class="pl-4">
-                        <h4 class="display-3 text-white">PRIORITÉ AUX UTILISATEURS</h4>
+                        <h4 class="display-3 text-white">
+                           <?php echo ma_tra("PRIORITÉ AUX UTILISATEURS") ?>
+                        </h4>
                         <p class="text-white">
-                           Une solution simple et facile à utiliser
+                         <?php echo ma_tra("Une solution simple et facile à utiliser")?>
                         </p>
                     </div>
                 </div>
@@ -310,11 +319,11 @@ require 'pages/includes/htmlheader.php';
                                 </div>
                             </div>
                             <div class="pl-4">
-                                <h5 class="title text-success">Transfère d'argent</h5>
+                                <h5 class="title text-success"><?php echo ma_tra("Transfère d'argent")?></h5>
                                 <p>
-                                    Utiliser le QRcode de vos proches pour leurs faire des transferts sécurités et rapide à travers tout le Bénin. 
+                                   <?php echo ma_tra("Utiliser le QRcode de vos proches pour leurs faire des transferts sécurités et rapide à travers tout le Bénin.")?>
                                 </p>
-                                <a style="font-size: 12px;" href="http://dashboard.gandokintche.com/payment" class="badge badge-pill badge-primary"> faire un transfère  </a>
+                                <a style="font-size: 12px;" href="http://dashboard.gandokintche.com/payment" class="badge badge-pill badge-primary"> <?php echo ma_tra("faire un transfère");?>  </a>
                             </div>
                         </div>
                     </div>
@@ -328,11 +337,11 @@ require 'pages/includes/htmlheader.php';
                                 </div>
                             </div>
                             <div class="pl-4">
-                                <h5 class="title text-warning">Générer des factures</h5>
+                                <h5 class="title text-warning"><?php echo ma_tra("Générer des factures") ?></h5>
                                 <p>
-                                    Disposé d’un outil de facturation au formats PDF lié à chaque transaction réalisée sur votre site d’e-commerce afin d’assurer la traçabilité de toutes vos interactions avec vos clients. 
+                                    <?php echo ma_tra("Disposé d’un outil de facturation au formats PDF lié à chaque transaction réalisée sur votre site d’e-commerce afin d’assurer la traçabilité de toutes vos interactions avec vos clients.")?>
                                 </p>
-                                <a style="font-size: 12px;" href="http://dashboard.gandokintche.com/invoice" class="badge badge-pill badge-warning">générer une facture</a>
+                                <a style="font-size: 12px;" href="http://dashboard.gandokintche.com/invoice" class="badge badge-pill badge-warning"><?php echo ma_tra("générer une facture");?></a>
                             </div>
                         </div>
                     </div>
@@ -449,10 +458,10 @@ require 'pages/includes/htmlheader.php';
 <section class="satisfaction_area" id="about">
     <div class="container">
         <div class="main_title">
-            <h2>INTEGRATION API</h2>
+            <h2><?php echo ma_tra("INTEGRATION API")?></h2>
             <p>
-               Nous sommes convaincus que les paiements en ligne constitueront le socle du commerce national et régionale en Afrique et nous travaillons alors à sa démocratisation à travers des solutions évolutives et flexibles. En éliminant les complexités inutiles et chronophages, nous vous permettons de vous lancer grâce GandokinTche en quelques minutes seulement avec une API codé avec les langages de base à savoir PHP, Java et Javascript.
-            <a style="font-size: 12px;" href="#" class="badge badge-pill badge-warning">Voir Plus...</a>
+                <?php echo ma_tra("Nous sommes convaincus que les paiements en ligne constitueront le socle du commerce national et régionale  en Afrique et nous travaillons alors à sa démocratisation à travers des solutions évolutives et flexibles. En éliminant les complexités inutiles et chronophages, nous vous permettons de vous lancer grâce GandokinTche en quelques minutes seulement avec une API codé avec les langages de base à savoir PHP, Java et Javascript.")?>
+            <a style="font-size: 12px;" href="developpeur" class="badge badge-pill badge-warning"> <?php echo ma_tra("Voir Plus...")?></a>
             </p>
         </div>
         <div class="row satisfaction_item_inner">
@@ -461,9 +470,8 @@ require 'pages/includes/htmlheader.php';
                     <div class="sat_icon">
                         <i class="fa fa-clone" aria-hidden="true"></i>
                     </div>
-                    <a href="developpeur"><h4>Facile à mettre en place</h4></a>
-                    <p>Nous travaillons sans relâche pour mettre au profit des utilisateurs,
-                        un outils simple à intégrer</p>
+                    <a href="developpeur"><h4><?php echo ma_tra("Facile à mettre en place")?></h4></a>
+                    <p><?php echo ma_tra("Nous travaillons sans relâche pour mettre au profit des utilisateurs, un outils simple à intégrer")?></p>
                 </div>
             </div>
             <div class="col-md-4 col-xs-6">
@@ -471,8 +479,8 @@ require 'pages/includes/htmlheader.php';
                     <div class="sat_icon">
                         <i class="fa fa-clock-o" aria-hidden="true"></i>
                     </div>
-                    <a href="support"><h4>24/7 Support</h4></a>
-                    <p>Vous pouvez contacter notre service support pour une assistance ou pour avoir des informations particulière sur l'outil</p>
+                    <a href="support"><h4><?php echo ma_tra("24/7 Support")?></h4></a>
+                    <p><?php echo ma_tra("Vous pouvez contacter notre service support pour une assistance ou pour avoir des informations particulière sur l'outil")?></p>
                 </div>
             </div>
             <div class="col-md-4 col-xs-6">
@@ -480,8 +488,8 @@ require 'pages/includes/htmlheader.php';
                     <div class="sat_icon">
                         <i class="fa fa-folder-open" aria-hidden="true"></i>
                     </div>
-                    <a href="#"><h4> Documentation</h4></a>
-                    <p>Vous pouvez aussi consulter la documentation de l'API </p>
+                    <a href="#"><h4><?php echo ma_tra("Documentation")?></h4></a>
+                    <p><?php echo ma_tra("Vous pouvez aussi consulter la documentation de l'API ")?> </p>
                 </div>
             </div>
         </div>

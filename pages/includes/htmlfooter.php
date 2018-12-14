@@ -6,12 +6,12 @@
             <div class="subscrib_inner">
                 <div class="main_title">
                     <h2>NewsLetter</h2>
-                    <p>Inscrivez-vous et recevez par email nos nouveauté</p>
+                    <p><?php echo ma_tra("Inscrivez-vous et recevez par email nos nouveauté") ?></p>
                 </div>
                 <div class="input-group">
-                    <input type="email" class="form-control" placeholder="&#xf003;   Votre email">
+                    <input type="email" class="form-control" placeholder="&#xf003;   <?php echo ma_tra("Votre email")?>">
                     <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">Envoie</button>
+                                <button class="btn btn-default" type="button"><?php echo ma_tra("Envoie") ?></button>
                             </span>
                 </div>
             </div>
@@ -23,11 +23,11 @@
                 <div class="col-md-2 col-xs-6">
                     <aside class="f_widget home_widget">
                         <div class="f_title">
-                            <h3>Produits</h3>
+                            <h3><?php echo ma_tra("Solutions") ?></h3>
                         </div>
                         <ul>
                             <li><a href="#">Paiements</a></li>
-                            <li><a href="#">Covoiturage</a></li>
+                            <li><a href="#"><?php echo ma_tra("Facturations")?></a></li>
                             <li><a href="#">E-commerce</a></li>
                         </ul>
                     </aside>
@@ -38,44 +38,43 @@
                             <h3>Support</h3>
                         </div>
                         <ul>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">Help</a></li>
-                            <li><a href="#">Offer</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="support"><?php echo ma_tra("FAQ")?></a></li>
+                            <li><a href="tarif"><?php echo ma_tra("Offres")?></a></li>
+                            <li><a href="#"><?php echo ma_tra("Contact")?></a></li>
                         </ul>
                     </aside>
                 </div>
                 <div class="col-md-8 col-xs-12">
                     <aside class="f_widget contact_widget">
                         <div class="f_title">
-                            <h3>Nous contactez</h3>
+                            <h3><?php echo ma_tra("Nous contactez")?></h3>
                         </div>
                         <form class="row contact_widget_form" action="" method="post" id="contactForm" novalidate="novalidate">
                             <div class="col-md-6">
                                 <div class="row">
                                     <div class="form-group col-md-12">
-                                        <input type="text" class="form-control" id="name" name="name" placeholder="Votre nom">
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="<?php echo ma_tra("Votre nom")?>">
                                     </div>
                                     <div class="form-group col-md-12">
-                                        <input type="text" class="form-control" id="phone" name="phone" placeholder="Téléphone">
+                                        <input type="text" class="form-control" id="phone" name="phone" placeholder="<?php echo ma_tra("Téléphone")?>">
                                     </div>
                                     <div class="form-group col-md-12">
-                                        <input type="email" class="form-control" id="email" name="email" placeholder="E-Mail">
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="<?php echo ma_tra("E-Mail")?>">
                                     </div>
                                     <div class="form-group col-md-12">
-                                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Sujet">
+                                        <input type="text" class="form-control" id="subject" name="subject" placeholder="<?php echo ma_tra("Sujet")?>">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="row">
                                     <div class="form-group col-md-12">
-                                        <textarea class="form-control" name="message" id="message" rows="1" placeholder="Votre Méssage......."></textarea>
+                                        <textarea class="form-control" name="message" id="message" rows="1" placeholder="<?php echo ma_tra("Votre Méssage.......")?>"></textarea>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group col-md-12">
-                                <button type="submit" value="submit your quote" class="btn submint_btn form-control">Envoyé</button>
+                                <button type="submit" value="submit your quote" class="btn submint_btn form-control"><?php echo ma_tra("Envoyé")?></button>
                             </div>
                         </form>
                     </aside>
@@ -87,17 +86,15 @@
         <div class="row container">
             <div class="pull-left">
                 <p id="lef" class="">
-                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                        <a href="http://www.gandokintche.com" > GandokinTché &copy;  </a>Copyright <script>document.write(new Date().getFullYear());</script>
-                   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 </p>
             </div>
             <div id="rig" class="pull-right">
                 <ul>
                     <li><a href="#">Terme & Condition</a></li>
-                    <li><a href="http://www.gandokintche.com/tarif">Tarifs</a></li>
-                    <li><a  href="http://www.gandokintche.com/developpeur">Développeurs</a></li>
-                    <li><a href="#">Nous contactez</a></li>
+                    <li><a href="http://www.gandokintche.com/tarif"><?php echo ma_tra("Tarifs")?></a></li>
+                    <li><a  href="http://www.gandokintche.com/developpeur"><?php echo ma_tra("Développeurs")?></a></li>
+                    <li><a href="#"><?php echo ma_tra("Nous contactez")?></a></li>
                 </ul>
             </div>
         </div>
@@ -141,6 +138,20 @@
 <script async src="../../../../../www.googletagmanager.com/gtag/jsa055?id=UA-23581568-13"></script>
 <script>
 
+
+    function lange(l) {
+        $.ajax({
+            url:"Tools/change?lang="+l,
+            success: function (data) {
+                data=JSON.parse(data);
+                if(data != false)
+                {
+                    window.location.reload(true);
+                }
+            }
+        });
+    }
+
     if(screen.width >= 1024){
         $('#lef').css("margin-left","50px");
         $('#rig').css("right","0px");
@@ -166,7 +177,7 @@
         var options = {
             facebook: "153123795363789", // Facebook page ID
             whatsapp: "+22996702976", // WhatsApp number
-            call_to_action: "Besoin d'aide ?", // Call to action
+            call_to_action: "<?php echo ma_tra("Besoin d'aide ?"); ?>", // Call to action
             button_color: "#0d1c3f", // Color of button
             position: "right", // Position may be 'right' or 'left'
             order: "facebook,whatsapp", // Order of buttons
