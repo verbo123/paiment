@@ -35,7 +35,7 @@ require 'pages/includes/htmlheader.php';
                                         <i class="ni ni-check-bold"></i>
                                     </div>
                                 </div>
-                                <h6 style="font-size: 1em;" class="text-primary text-uppercase">API REST SOAP</h6>
+                                <h6 style="font-size: 1em;" class="text-primary text-uppercase">API</h6>
                                 <p class="description mt-3">
                                    <?php echo ma_tra("Nous mettons à votre disposition les services REST que vous pouvez invoquer dans vos plateformes e-commerce, transport,..etc.")?></p>
                                 <div>
@@ -169,92 +169,92 @@ require 'pages/includes/htmlheader.php';
 <section  class="question_area">
     <div class="container">
         <div class="main_title">
-            <h2><?php echo ma_tra("Télécharger les API")?></h2>
-            <p><?php echo ma_tra("L'API de GandokinTché fournir un certain niveau d'abstration au développeur, c'est-à-dire qu'elle lui masque la complexité de l'accès à notre système en proposant un jeu de fonctions standard dont seuls les paramètres et les valeurs retournées sont connus")?></p>
+            <h2><?php echo ma_tra("Nos outils pour les développeurs")?></h2>
+            <p><?php echo ma_tra("Que vous cherchiez un outil de développement ou une API, nos documentations pour les développeurs GandokinTché vous aideront à vous lancer. ")?></p>
         </div>
-        <div class="row">
-            <div class="col-md-7">
-                <div class="left_question_inner">
-                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingOne">
-                                <h4 class="panel-title">
-                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        <?php echo ma_tra("1.Intégration sur Application Android")?>
-                                        <i class="fa fa-minus" aria-hidden="true"></i>
-                                        <i class="fa fa-plus" aria-hidden="true"></i>
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                                <div class="panel-body">
-                                    <a class="price_btn" href="#"><?php echo ma_tra("Lancer le téléchargement") ?></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingTwo">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        <?php echo ma_tra("2. Intégration sur Application IOS") ?>
-                                        <i class="fa fa-minus" aria-hidden="true"></i>
-                                        <i class="fa fa-plus" aria-hidden="true"></i>
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                <div class="panel-body">
-                                    <a class="price_btn" href="#"><?php echo ma_tra("Lancer le téléchargement") ?></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingThree">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        <?php echo ma_tra("3. Intégration sur Application web (PHP)")?>
-                                        <i class="fa fa-minus" aria-hidden="true"></i>
-                                        <i class="fa fa-plus" aria-hidden="true"></i>
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                <div class="panel-body">
-                                    <a class="price_btn" href="#"><?php echo ma_tra("Lancer le téléchargement")?></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingfour">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
-                                        <?php echo ma_tra("4.Intégration sur Application web (Javascript)")?>
-                                        <i class="fa fa-minus" aria-hidden="true"></i>
-                                        <i class="fa fa-plus" aria-hidden="true"></i>
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapsefour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfour">
-                                <div class="panel-body">
-                                    <a class="price_btn" href="#"><?php echo ma_tra("Lancer le téléchargement")?></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <a href="#" class="lip pull-right" style="color: #00A0D1;font-size: 18px">
-                        <?php echo ma_tra("Voir la documentation")?>
-                    <span> <i class="fa fa-arrow-right"></i> </span>
-                </a>
-            </div>
-
-            <div class="col-md-5" id="qui">
-                <div class="right_question_img" >
-                    <img src="assets/img/enr.png" alt="">
-                </div>
-            </div>
-        </div>
+<!--        <div class="row">-->
+<!--            <div class="col-md-7">-->
+<!--                <div class="left_question_inner">-->
+<!--                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">-->
+<!--                        <div class="panel panel-default">-->
+<!--                            <div class="panel-heading" role="tab" id="headingOne">-->
+<!--                                <h4 class="panel-title">-->
+<!--                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">-->
+<!--                                        --><?php //echo ma_tra("1.Intégration sur Application Android")?>
+<!--                                        <i class="fa fa-minus" aria-hidden="true"></i>-->
+<!--                                        <i class="fa fa-plus" aria-hidden="true"></i>-->
+<!--                                    </a>-->
+<!--                                </h4>-->
+<!--                            </div>-->
+<!--                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">-->
+<!--                                <div class="panel-body">-->
+<!--                                    <a class="price_btn" href="#">--><?php //echo ma_tra("Lancer le téléchargement") ?><!--</a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="panel panel-default">-->
+<!--                            <div class="panel-heading" role="tab" id="headingTwo">-->
+<!--                                <h4 class="panel-title">-->
+<!--                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">-->
+<!--                                        --><?php //echo ma_tra("2. Intégration sur Application IOS") ?>
+<!--                                        <i class="fa fa-minus" aria-hidden="true"></i>-->
+<!--                                        <i class="fa fa-plus" aria-hidden="true"></i>-->
+<!--                                    </a>-->
+<!--                                </h4>-->
+<!--                            </div>-->
+<!--                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">-->
+<!--                                <div class="panel-body">-->
+<!--                                    <a class="price_btn" href="#">--><?php //echo ma_tra("Lancer le téléchargement") ?><!--</a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="panel panel-default">-->
+<!--                            <div class="panel-heading" role="tab" id="headingThree">-->
+<!--                                <h4 class="panel-title">-->
+<!--                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">-->
+<!--                                        --><?php //echo ma_tra("3. Intégration sur Application web (PHP)")?>
+<!--                                        <i class="fa fa-minus" aria-hidden="true"></i>-->
+<!--                                        <i class="fa fa-plus" aria-hidden="true"></i>-->
+<!--                                    </a>-->
+<!--                                </h4>-->
+<!--                            </div>-->
+<!--                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">-->
+<!--                                <div class="panel-body">-->
+<!--                                    <a class="price_btn" href="#">--><?php //echo ma_tra("Lancer le téléchargement")?><!--</a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="panel panel-default">-->
+<!--                            <div class="panel-heading" role="tab" id="headingfour">-->
+<!--                                <h4 class="panel-title">-->
+<!--                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsefour" aria-expanded="false" aria-controls="collapsefour">-->
+<!--                                        --><?php //echo ma_tra("4.Intégration sur Application web (Javascript)")?>
+<!--                                        <i class="fa fa-minus" aria-hidden="true"></i>-->
+<!--                                        <i class="fa fa-plus" aria-hidden="true"></i>-->
+<!--                                    </a>-->
+<!--                                </h4>-->
+<!--                            </div>-->
+<!--                            <div id="collapsefour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfour">-->
+<!--                                <div class="panel-body">-->
+<!--                                    <a class="price_btn" href="#">--><?php //echo ma_tra("Lancer le téléchargement")?><!--</a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!---->
+<!--                <a href="#" class="lip pull-right" style="color: #00A0D1;font-size: 18px">-->
+<!--                        --><?php //echo ma_tra("Voir la documentation")?>
+<!--                    <span> <i class="fa fa-arrow-right"></i> </span>-->
+<!--                </a>-->
+<!--            </div>-->
+<!---->
+<!--            <div class="col-md-5" id="qui">-->
+<!--                <div class="right_question_img" >-->
+<!--                    <img src="assets/img/enr.png" alt="">-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
     </div>
 </section>
 

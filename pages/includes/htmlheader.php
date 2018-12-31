@@ -97,8 +97,8 @@ require 'Tools/fonction.php';
                                             </div>
                                         </div>
                                        <div class="co-md-9">
-                                               <a href="#"><h4 style="padding-bottom: 0"><?php echo ma_tra("PAIEMENTS")?></h4></a>
-                                               <p><?php echo ma_tra("Un outil complet pour les développeurs, facile à intégrer")?></p>
+                                               <a href="payment"><h4 style="padding-bottom: 0;color: #0d1c3f"><?php echo ma_tra("Paiement en ligne")?></h4></a>
+                                               <p><?php echo ma_tra("Des paiements dans des boutiques en ligne")?></p>
                                        </div>
                                     </div>
 
@@ -111,8 +111,8 @@ require 'Tools/fonction.php';
                                             </div>
                                         </div>
                                         <div class="co-md-9">
-                                            <a href="#"><h4 style="padding-bottom: 0"><?php echo ma_tra("FACTURATION")?></h4></a>
-                                            <p><?php echo ma_tra("Un outil qui permet d'établir une facture à vos clients en un clic")?></p>
+                                            <a href="virement"><h4 style="padding-bottom: 0;color: #0d1c3f"><?php echo ma_tra("Envoyez de l'argent")?></h4></a>
+                                            <p><?php echo ma_tra("Envoyez de l'argent à vos proches partout au Bénin")?></p>
                                         </div>
                                     </div>
 
@@ -120,9 +120,9 @@ require 'Tools/fonction.php';
                             </ul>
                         </li>
 
-                        <li  class="">
-                            <a href="#" style="color: #0d1c3f;font-weight: 700;" class="lip"><?php echo ma_tra("E-COMMERCE")?></a>
-                        </li>
+<!--                        <li  class="">-->
+<!--                            <a href="#" style="color: #0d1c3f;font-weight: 700;" class="lip">--><?php //echo ma_tra("E-COMMERCE")?><!--</a>-->
+<!--                        </li>-->
 
                         <li  class="<?php if($title == ma_tra("Partenaires/Développeurs") ) echo "active" ?>">
                             <a href="developpeur" style="color: #0d1c3f;font-weight: 700;" class="lip"><?php echo ma_tra("PARTENAIRES & API")?> </a>
