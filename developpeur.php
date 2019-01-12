@@ -12,7 +12,7 @@ require 'pages/includes/htmlheader.php';
         <!-- <h1 style="font-size: 50px;font-family: 'Pacifico';"> <span style="color:#e0c3fc;">Gandokin</span><span style="color: #8ec5fc">Tche  </span> </span></h1> -->
         <h2 style="font-size: 25px"><?php echo ma_tra("Intégrer facilement")?> <br> <?php echo ma_tra("l'API sur votre platforme")?></h2>
         <div class="call-to-action">
-            <button style="width: 300px; height: 50px" type="submit" value="submit your quote" class="btn submint_btn form-control">
+            <button style="width: 300px; height: 50px" type="submit" value="submit your quote" class="doc btn submint_btn form-control">
                <?php echo ma_tra("Documentation")?>
             </button>
         </div>
@@ -35,7 +35,7 @@ require 'pages/includes/htmlheader.php';
                                         <i class="ni ni-check-bold"></i>
                                     </div>
                                 </div>
-                                <h6 style="font-size: 1em;" class="text-primary text-uppercase">API</h6>
+                                <h6 style="font-size: 1em;" class="text-primary text-uppercase">API/REST API</h6>
                                 <p class="description mt-3">
                                    <?php echo ma_tra("Nous mettons à votre disposition les services REST que vous pouvez invoquer dans vos plateformes e-commerce, transport,..etc.")?></p>
                                 <div>
@@ -43,7 +43,7 @@ require 'pages/includes/htmlheader.php';
                                     <span style="font-size: 0.8em" class="badge badge-pill badge-primary">IOS</span>
                                     <span style="font-size: 0.8em" class="badge badge-pill badge-primary">Android</span>
                                 </div>
-                                <a href="#" class="btn btn-primary mt-4"><?php echo ma_tra("Lire la suite...")?></a>
+                                <a href="https://docs.gandokintche.com/" class="btn btn-primary mt-4"><?php echo ma_tra("Lire la suite...")?></a>
                             </div>
                         </div>
                     </div>
@@ -64,7 +64,7 @@ require 'pages/includes/htmlheader.php';
                                     <span style="font-size: 0.8em" class="badge badge-pill badge-success"><?php echo ma_tra("Rapide")?></span>
                                     <span style="font-size: 0.8em" class="badge badge-pill badge-success"><?php echo ma_tra("Sécurisé")?></span>
                                 </div>
-                                <a href="#" class="btn btn-success mt-4"><?php echo ma_tra("Consulter...")?></a>
+                                <a href="https://docs.gandokintche.com/quick-start" class="btn btn-success mt-4"><?php echo ma_tra("Consulter...")?></a>
                             </div>
                         </div>
                     </div>
@@ -79,14 +79,14 @@ require 'pages/includes/htmlheader.php';
                                 <h6 style="font-size: 1em;" class="text-warning text-uppercase"><?php echo ma_tra("Nos services")?></h6>
                                 <p class="description mt-3">
                                     <?php echo ma_tra("Vous pouvez")?> <a target="_blank" href="#"><?php echo ma_tra("créer un compte")?></a>
-                                    <?php echo ma_tra("chez nous et utiliser nos différents services (Virements, Facturatcions,...etc) juste en quelques clics.")?>
+                                    <?php echo ma_tra("chez nous et utiliser nos différents services (Virements, achats en ligne,...etc) juste en quelques clics.")?>
                                    </p>
                                 <div>
                                     <span style="font-size: 0.8em" class="badge badge-pill badge-warning"><?php echo ma_tra("Rapide")?></span>
                                     <span style="font-size: 0.8em" class="badge badge-pill badge-warning"><?php echo ma_tra("Fiable")?></span>
                                     <span style="font-size: 0.8em" class="badge badge-pill badge-warning"><?php echo ma_tra("Sécurisé")?></span>
                                 </div>
-                                <a href="#" class="btn btn-warning mt-4"><?php echo ma_tra("Lire la suite...")?></a>
+                                <a href="payment" class="btn btn-warning mt-4"><?php echo ma_tra("Lire la suite...")?></a>
                             </div>
                         </div>
                     </div>
@@ -265,3 +265,9 @@ require 'pages/includes/htmlheader.php';
 <?php
 require 'pages/includes/htmlfooter.php';
 ?>
+
+<script type="text/javascript">
+    $('.doc').click(function () {
+        window.location.href="https://docs.gandokintche.com";
+    });
+</script>

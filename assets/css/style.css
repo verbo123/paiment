@@ -1997,6 +1997,55 @@ iframe {
     text-align: center;
 }
 
+#header_vir{
+  height: 570px;
+
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url('../img/fem.jpg') no-repeat center center;
+
+  background-size: cover;
+
+  padding-top: 30px;
+
+  padding-bottom: 30px;
+
+  text-align: center;
+}
+
+@media (min-width: 1000px)
+{
+  #woo{
+    height: 470px;
+
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url('../img/wood.png') no-repeat center center;
+
+    background-size: cover;
+
+    padding-top: 30px;
+
+    padding-bottom: 30px;
+
+    text-align: center;
+  }
+}
+
+@media (max-width: 1000px){
+  #woo
+  {
+    height: auto;
+    padding: 10px;
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url('../img/wood.png') no-repeat center center;
+
+    background-size: cover;
+
+    padding-top: 30px;
+
+    padding-bottom: 30px;
+
+    text-align: center;
+  }
+}
+
+
 .ve_center
 {
     position: relative;
@@ -3298,7 +3347,7 @@ iframe {
 }
 
 .left_choose_image ul li:nth-child(5) {
-  top: -38px;
+  top: -6px;
   left: calc(50% - 238px);
 }
 
@@ -7888,6 +7937,25 @@ iframe {
   letter-spacing: 1.4px;
   color: #6b6d6f;
 }
+
+
+.contact_widget_form .form-group select {
+  border-radius: 0px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+  height: 40px;
+  border: 1px solid #0d1c3f;
+  background: transparent;
+  padding: 0px 20px;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1.4px;
+  color: #6b6d6f;
+}
+
+
+
 
 .contact_widget_form .form-group input.placeholder {
   font-size: 14px;

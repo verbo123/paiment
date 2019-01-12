@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: site\n"
-"POT-Creation-Date: 2018-12-10 15:41+0100\n"
-"PO-Revision-Date: 2018-12-10 17:11+0100\n"
+"POT-Creation-Date: 2019-01-06 08:59+0100\n"
+"PO-Revision-Date: 2019-01-06 09:58+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_US\n"
@@ -15,7 +15,7 @@ msgstr ""
 "X-Poedit-KeywordsList: ma_tra\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: developpeur.php:3 pages/includes/htmlheader.php:127
+#: developpeur.php:3 pages/includes/htmlheader.php:130
 msgid "Partenaires/Développeurs"
 msgstr "API / Developers"
 
@@ -85,11 +85,11 @@ msgstr "sign Up"
 
 #: developpeur.php:82
 msgid ""
-"chez nous et utiliser nos différents services (Virements, Facturatcions,..."
+"chez nous et utiliser nos différents services (Virements, achats en ligne,..."
 "etc) juste en quelques clics."
 msgstr ""
-"with us and use our various services (Transfers, Invoices, ... etc) just in "
-"a few clicks."
+"with us and use our various services (Transfers, online shopping, ... etc) "
+"just in a few clicks."
 
 #: developpeur.php:86
 msgid "Fiable"
@@ -126,45 +126,68 @@ msgid ""
 msgstr "Better visibility of your company in our Partner Directory"
 
 #: developpeur.php:172
-msgid "Télécharger les API"
-msgstr "Download APIs"
+msgid "Nos outils pour les développeurs"
+msgstr "Our tools for developers"
 
 #: developpeur.php:173
 msgid ""
-"L'API de GandokinTché fournir un certain niveau d'abstration au développeur, "
-"c'est-à-dire qu'elle lui masque la complexité de l'accès à notre système en "
-"proposant un jeu de fonctions standard dont seuls les paramètres et les "
-"valeurs retournées sont connus"
+"Que vous cherchiez un outil de développement ou une API, nos documentations "
+"pour les développeurs GandokinTché vous aideront à vous lancer. "
 msgstr ""
-"The GandokinTché API provides a certain level of abstraction to the "
-"developer, ie it masks the complexity of the access to our system by "
-"proposing a set of standard functions whose only parameters and values "
-"returned are known"
+"Whether you are looking for a development tool or an API, our GandokinTché "
+"developer documentation will help you get started. "
 
-#: developpeur.php:183
-msgid "1.Intégration sur Application Android"
-msgstr "1.Integration on Android Application"
+#: grille.php:54
+msgid "Grille Tarifaire sur recharge de compte"
+msgstr "Fee schedule on account recharge"
 
-#: developpeur.php:191 developpeur.php:207 developpeur.php:223
-#: developpeur.php:239
-msgid "Lancer le téléchargement"
-msgstr "Launch the download"
+#: grille.php:63
+msgid "Tranche de Recharge"
+msgstr "Refill Slice"
 
-#: developpeur.php:199
-msgid "2. Intégration sur Application IOS"
-msgstr "2. Integration on IOS Application"
+#: grille.php:64
+msgid "Prélèvement"
+msgstr "Sample"
 
-#: developpeur.php:215
-msgid "3. Intégration sur Application web (PHP)"
-msgstr "3. Integration on Web Application (PHP)"
+#: grille.php:69
+msgid "De 500 à 250 000 FCFA"
+msgstr "From CFAF 500 to 250,000"
 
-#: developpeur.php:231
-msgid "4.Intégration sur Application web (Javascript)"
-msgstr "4.Integration on Web Application (Javascript)"
+#: grille.php:70
+msgid "100 FCFA"
+msgstr "CFAF 100"
 
-#: developpeur.php:247
-msgid "Voir la documentation"
-msgstr "See the documentation"
+#: grille.php:74
+msgid "De 250 001 à 500 000 FCFA"
+msgstr "From  CFAF 250,001 to 500,000"
+
+#: grille.php:75
+msgid "200 FCFA"
+msgstr "CFAF 200"
+
+#: grille.php:79
+msgid "De 500 001 à 750 000 FCFA"
+msgstr "From CFAF 500,001 to 750,000"
+
+#: grille.php:80
+msgid "300 FCFA"
+msgstr "CFAF 300"
+
+#: grille.php:84
+msgid "De 750 001 à 1 000 000 FCFA"
+msgstr "From CFAF 750,001 to 1,000,000"
+
+#: grille.php:85
+msgid "400 FCFA"
+msgstr "CFAF 400"
+
+#: grille.php:89
+msgid "+ 1 000 000 FCFA "
+msgstr "+ CFAF 1,000,000 "
+
+#: grille.php:90
+msgid "500 FCFA"
+msgstr "CFAF 500"
 
 #: index.php:3
 msgid "Accueil"
@@ -178,15 +201,14 @@ msgstr "The payment system,"
 msgid "en ligne sécurisé au Bénin"
 msgstr "secure online in Benin"
 
-#: index.php:159 tarif.php:13
+#: index.php:159 tarif.php:49 virement.php:239
 msgid "Ouvrir un compte gratuitement"
 msgstr "Open an account for free"
 
 #: index.php:179
 msgid ""
 "Une solution simple et sûr pour être payé et se faire payer partout au Bénin"
-msgstr ""
-"A simple and secure solution to get paid and get paid everywhere in Benin"
+msgstr "An easy and simple secure way to pay and be pay everywhere in Benin"
 
 #: index.php:186
 msgid ""
@@ -207,7 +229,7 @@ msgstr ""
 "you easy integration and new unparalleled features to help you create the "
 "best products for your customers."
 
-#: index.php:197 pages/includes/htmlheader.php:100
+#: index.php:197
 msgid "PAIEMENTS"
 msgstr "PAYMENTS"
 
@@ -237,7 +259,7 @@ msgstr ""
 msgid "la croissance de votre business."
 msgstr "the growth of your business."
 
-#: index.php:245 pages/includes/htmlheader.php:131
+#: index.php:245 pages/includes/htmlheader.php:134
 msgid "TARIFS"
 msgstr "PRICES"
 
@@ -365,114 +387,259 @@ msgstr ""
 msgid "Vous pouvez aussi consulter la documentation de l'API "
 msgstr "You can also consult the documentation of the API "
 
-#: pages/includes/htmlfooter.php:9
+#: index.php:519
+msgid ""
+"Facile, rapide et sécuriser à utiliser. En tant que développeur, je le "
+"recommande vivement à tout les monde avec une documentation complète "
+"permettant une intégration facile sur des sites e-commerce."
+msgstr ""
+"Easy, fast and secure to use. As a developer, I highly recommend it to "
+"anyone with complete documentation for easy integration on e-commerce sites."
+
+#: index.php:529
+msgid ""
+"Jai essayé GandokinTché, et je suis ravi de l'avoir comme compagnons dans "
+"mes activités financière."
+msgstr ""
+"I have tried GandokinTché, and I am delighted to have him as a companion in "
+"my financial activities."
+
+#: pages/includes/htmlfooter.php:27
 msgid "Inscrivez-vous et recevez par email nos nouveauté"
 msgstr "Sign up and receive by email our novelty"
 
-#: pages/includes/htmlfooter.php:12
+#: pages/includes/htmlfooter.php:30
 msgid "Votre email"
 msgstr "Your email"
 
-#: pages/includes/htmlfooter.php:14
+#: pages/includes/htmlfooter.php:32
 msgid "Envoie"
 msgstr "Send"
 
-#: pages/includes/htmlfooter.php:26
+#: pages/includes/htmlfooter.php:44
 msgid "Solutions"
 msgstr "Solutions"
 
-#: pages/includes/htmlfooter.php:30
-msgid "Facturations"
-msgstr "Bellings"
+#: pages/includes/htmlfooter.php:47 pages/includes/htmlheader.php:103
+#: payment.php:3
+msgid "Paiement en ligne"
+msgstr "Online payment"
 
-#: pages/includes/htmlfooter.php:41
+#: pages/includes/htmlfooter.php:48 pages/includes/htmlheader.php:117
+#: virement.php:3 virement.php:276 virement.php:288
+msgid "Envoyez de l'argent"
+msgstr "Send money"
+
+#: pages/includes/htmlfooter.php:59
 msgid "FAQ"
 msgstr "FAQ"
 
-#: pages/includes/htmlfooter.php:42
-msgid "Offres"
-msgstr "Offers"
-
-#: pages/includes/htmlfooter.php:43
-msgid "Contact"
-msgstr "Contact"
-
-#: pages/includes/htmlfooter.php:50 pages/includes/htmlfooter.php:97
-msgid "Nous contactez"
-msgstr "Contact us"
-
-#: pages/includes/htmlfooter.php:56
-msgid "Votre nom"
-msgstr "Your name"
-
-#: pages/includes/htmlfooter.php:59
-msgid "Téléphone"
-msgstr "Phone"
-
-#: pages/includes/htmlfooter.php:62
-msgid "E-Mail"
-msgstr "E-Mail"
-
-#: pages/includes/htmlfooter.php:65
-msgid "Sujet"
-msgstr "Topic"
-
-#: pages/includes/htmlfooter.php:72
-msgid "Votre Méssage......."
-msgstr "Your message......."
-
-#: pages/includes/htmlfooter.php:77
-msgid "Envoyé"
-msgstr "Sent"
-
-#: pages/includes/htmlfooter.php:95 pages/includes/htmlheader.php:130
-#: tarif.php:3
+#: pages/includes/htmlfooter.php:60 pages/includes/htmlfooter.php:127
+#: pages/includes/htmlheader.php:133 tarif.php:3
 msgid "Tarifs"
 msgstr "Prices"
 
-#: pages/includes/htmlfooter.php:96
+#: pages/includes/htmlfooter.php:68 pages/includes/htmlfooter.php:129
+msgid "Nous contactez"
+msgstr "Contact us"
+
+#: pages/includes/htmlfooter.php:74
+msgid "Nom et Prénom"
+msgstr "Last name and first name"
+
+#: pages/includes/htmlfooter.php:77
+msgid "Téléphone"
+msgstr "Phone"
+
+#: pages/includes/htmlfooter.php:80
+msgid "E-Mail"
+msgstr "E-Mail"
+
+#: pages/includes/htmlfooter.php:84
+msgid "Type de problème"
+msgstr "Type of problem"
+
+#: pages/includes/htmlfooter.php:86
+msgid "Problème de paiement"
+msgstr "Payment problem"
+
+#: pages/includes/htmlfooter.php:87
+msgid "Problème d'intégration de l'API"
+msgstr "API integration issue"
+
+#: pages/includes/htmlfooter.php:88
+msgid "Je veux être distributeur"
+msgstr "I want to be a distributor"
+
+#: pages/includes/htmlfooter.php:89
+msgid "Problème de recharge de compte"
+msgstr "Account recharge problem"
+
+#: pages/includes/htmlfooter.php:90
+msgid "Suggestions"
+msgstr "Suggestions"
+
+#: pages/includes/htmlfooter.php:91
+msgid "Autres..."
+msgstr "Other..."
+
+#: pages/includes/htmlfooter.php:99
+msgid "Votre Méssage......."
+msgstr "Your message......."
+
+#: pages/includes/htmlfooter.php:104
+msgid "Envoyé"
+msgstr "Sent"
+
+#: pages/includes/htmlfooter.php:128
 msgid "Développeurs"
 msgstr "Developers"
 
-#: pages/includes/htmlfooter.php:180
-msgid "Besoin d'aide ?"
-msgstr "Need help ?"
+#: pages/includes/htmlfooter.php:196 pages/includes/htmlfooter.php:266
+msgid "Message"
+msgstr "Message"
 
-#: pages/includes/htmlheader.php:17
+#: pages/includes/htmlfooter.php:202 pages/includes/htmlfooter.php:272
+msgid "Rééssayer"
+msgstr "Retry"
+
+#: pages/includes/htmlfooter.php:218 pages/includes/htmlfooter.php:294
+msgid "Congratulations!"
+msgstr "Congratulations!"
+
+#: pages/includes/htmlfooter.php:224 pages/includes/htmlfooter.php:300
+msgid "Merci"
+msgstr "Thank"
+
+#: pages/includes/htmlfooter.php:365
+msgid "Besoin d'aide ?"
+msgstr "For help ?"
+
+#: pages/includes/htmlheader.php:18
 msgid "Paiement sécrurisé au Bénin"
 msgstr "Secured payment in Benin"
 
-#: pages/includes/htmlheader.php:88
+#: pages/includes/htmlheader.php:91
 msgid "SOLUTIONS"
 msgstr "SOLUTIONS"
 
-#: pages/includes/htmlheader.php:101
-msgid "Un outil complet pour les développeurs, facile à intégrer"
-msgstr "A complete tool for developers, easy to integrate"
+#: pages/includes/htmlheader.php:104
+msgid "Des paiements dans des boutiques en ligne"
+msgstr "Payments in online shops"
 
-#: pages/includes/htmlheader.php:114
-msgid "FACTURATION"
-msgstr "BILLING"
+#: pages/includes/htmlheader.php:118
+msgid "Envoyez de l'argent à vos proches partout au Bénin"
+msgstr "Send money to your loved ones everywhere in Benin"
 
-#: pages/includes/htmlheader.php:115
-msgid "Un outil qui permet d'établir une facture à vos clients en un clic"
-msgstr "A tool that allows you to invoice your customers in one click"
-
-#: pages/includes/htmlheader.php:124
-msgid "E-COMMERCE"
-msgstr "E-COMMERCE"
-
-#: pages/includes/htmlheader.php:128
+#: pages/includes/htmlheader.php:131
 msgid "PARTENAIRES & API"
 msgstr "PARTNERS & API"
 
-#: pages/includes/htmlheader.php:134
+#: pages/includes/htmlheader.php:137
 msgid "FAQ & SUPPORTS"
 msgstr "FAQ & SUPPORTS"
 
-#: pages/includes/htmlheader.php:188 pages/includes/htmlheader.php:190
+#: pages/includes/htmlheader.php:191 pages/includes/htmlheader.php:193
 msgid "Accédez à votre compte"
-msgstr "Access your account"
+msgstr "Access to your account"
+
+#: payment.php:197
+msgid "Effectuez vos paiements en ligne "
+msgstr "Make your payments online "
+
+#: payment.php:197
+msgid "en quelques clics."
+msgstr "in a few clicks."
+
+#: payment.php:199
+msgid "Payez de manière sécurisée sur des millions de sites e-commerce."
+msgstr "Pay securely on millions of e-commerce sites."
+
+#: payment.php:200
+msgid "Grâce à votre compte GandokinTché, vous n'avez pas besoin de "
+msgstr "Thanks to your account GandokinTché, you do not need to "
+
+#: payment.php:201
+msgid "voir le marchand avant de lui faire un transfert,son code"
+msgstr "see the merchant before making a transfer, his code"
+
+#: payment.php:202
+msgid "d'opération ou son QRcode suffisent."
+msgstr "operation or its QRcode is sufficient."
+
+#: payment.php:206
+msgid "Créer un compte"
+msgstr "Create an account"
+
+#: payment.php:219
+msgid "Le shopping est mieux chez soi"
+msgstr "Shopping is better at home"
+
+#: payment.php:222
+msgid ""
+"Payez des biens et services dans des boutiques en ligne sans communiquer vos "
+"informations financière au vendeur.C'est simple, très rapide et plus "
+"sécurisé."
+msgstr ""
+"Pay for goods and services in online shops without communicating your "
+"financial information to the seller. It's simple, fast and secure."
+
+#: payment.php:244
+msgid "Vos achats partout au Bénin et dans le monde entier"
+msgstr "Your purchases everywhere in Benin and in the whole world"
+
+#: payment.php:246
+msgid ""
+"Inutile de prendre de prendre un taxi ou un billet d'avion pour faire votre "
+"shopping dans le monde entier. Faites votre shopping dans des boutiques en "
+"ligne en quelques clics seulement avec votre compte GnadokinTché."
+msgstr ""
+"No need to take a taxi or plane ticket to do your shopping around the world. "
+"Make your shopping in online shops in just a few clicks with your "
+"GnadokinTché account."
+
+#: payment.php:249
+msgid "Créer un compte maintenant"
+msgstr "Create an account now"
+
+#: payment.php:260
+msgid ""
+"Je ne m'inquiète plus quand j'achète sur des boutiques en ligne et en plus, "
+"je n'ai pas besoin d'être présent physiquement"
+msgstr ""
+"I do not worry anymore when I buy online stores and besides, I do not have "
+"to be physically present"
+
+#: payment.php:276
+msgid "Nous sauvegardons une trace de vos achats"
+msgstr "We save a record of your purchases"
+
+#: payment.php:279
+msgid ""
+"Faites votre shopping en ligne l'esprit tranquille, nous pouvons protéger et "
+"sauvegarder vos achats. Si vous rencontrez des difficultés lors d'une "
+"commande, nous ferons notre possible pour vous aider"
+msgstr ""
+"Make your shopping online with peace of mind, we can protect and save your "
+"purchases. If you encounter difficulties during an order, we will do our "
+"best to help you"
+
+#: payment.php:281
+msgid "Consultez l'historique de mes achats"
+msgstr "Check the history of my purchases"
+
+#: payment.php:288 virement.php:319
+msgid "Pas de frais cachés."
+msgstr "No hidden fees."
+
+#: payment.php:291
+msgid ""
+"En payant sur des boutiques en ligne,  vous ne payez pas de frais "
+"supplémentaires. Il n'y a ni frais cachés, ni frais de traitement. Profitez "
+"de votre shopping, et c'est tout. "
+msgstr ""
+"By paying on online stores, you do not pay any additional fees. There are no "
+"hidden fees or processing fees. Enjoy your shopping, and that's it. "
 
 #: support.php:3
 msgid "Support"
@@ -480,109 +647,93 @@ msgstr "Support"
 
 #: support.php:11
 msgid "Besoins d'aide ?"
-msgstr "Need help ?"
-
-#: support.php:17
-msgid "Poser votre question"
-msgstr "Ask your question"
-
-#: support.php:19
-msgid "Recherche"
-msgstr "Research"
+msgstr "For help ?"
 
 #: support.php:34
 msgid "FOIRES AUX QUESTIONS"
 msgstr "FREQUENTLY ASKED QUESTIONS"
 
-#: support.php:136
+#: support.php:113
 msgid "Autres manières d'obtenir d'aide"
 msgstr "Other ways to get help"
 
-#: support.php:144
+#: support.php:121
 msgid "Forum d'aide"
 msgstr "Help Forum"
 
-#: support.php:145
+#: support.php:122
 msgid "Trouvez des réponses et participez à la discussion"
 msgstr "Find answers and join the discussion"
 
-#: support.php:153
+#: support.php:130
 msgid "Gestionnaire de litige"
 msgstr "Litigation Manager"
 
-#: support.php:154
+#: support.php:131
 msgid "Résolver les problème de transaction"
-msgstr "Solve transaction problems"
+msgstr "Solve transactions problems"
 
-#: support.php:162
+#: support.php:139
 msgid "Contactez-nous"
 msgstr "Contact Us"
 
-#: support.php:163
+#: support.php:140
 msgid "Contactez le service clientèle"
 msgstr "Contact customer service"
 
-#: tarif.php:11
+#: tarif.php:47
 msgid "Découvrez tous nos tarifs :"
 msgstr "Discover all our prices:"
 
-#: tarif.php:11
+#: tarif.php:47
 msgid "clairs, flexibles et sans suprises."
 msgstr "clear, flexible and without surprises."
 
-#: tarif.php:26
+#: tarif.php:63
 msgid "Acheteurs"
 msgstr "Buyers"
 
-#: tarif.php:27
+#: tarif.php:64
 msgid ""
-"Utilisez GandokinTché gratuitement pour payer vos achats. Des frais peuvent "
-"s'appliquer en cas de"
+"Utilisez GandokinTché gratuitement pour payer vos achats en ligne. Des frais "
+"peuvent s'appliquer en cas de"
 msgstr ""
-"Use GandokinTché for free to pay for your purchases. Fees may apply in case "
-"of"
+"Use GandokinTché for free to pay for your online purchases. Fees may apply "
+"in case of"
 
-#: tarif.php:28
+#: tarif.php:65
 msgid "conversion de devise."
 msgstr "currency conversion."
 
-#: tarif.php:34
+#: tarif.php:71
 msgid "Vendeurs"
 msgstr "Sellers"
 
-#: tarif.php:35
+#: tarif.php:72
 msgid ""
-"Nos frais de vente sont simples et transparents. Vous payez uniquement pour "
-"les paiements que vous recevez, il n'y a pas de frais mensuels. Et plus vous "
-"vendez, plus la commission diminue."
+"Nos frais de vente sont simples et transparents. Vous ne payez pour les "
+"paiements que vous recevez, il n'y a pas de frais mensuels."
 msgstr ""
-"Our selling costs are simple and transparent. You only pay for the payments "
-"you receive, there is no monthly fee. And the more you sell, the lower the "
-"commission."
+"Our selling costs are simple and transparent. You do not pay for the "
+"payments you receive, there is no monthly fee."
 
-#: tarif.php:36
-msgid "Contactez nous pour plus d'information."
-msgstr "Contact us for more information."
-
-#: tarif.php:45
+#: tarif.php:81
 msgid "Envoyer de l'argent"
 msgstr "Send money"
 
-#: tarif.php:46
+#: tarif.php:82
 msgid ""
-"Depuis votre compte GandokinTché, envoyez sans frais de l'argent en FCFA à "
-"vos proches au Bénin. Pour les transactions effectuées dans un autre devise, "
-"des frais de conversion peuvent s'appliquer."
+"Depuis votre compte GandokinTché, envoyez sans frais, de l'argent en FCFA à "
+"vos proches au Bénin."
 msgstr ""
-"From your GandokinTché account, send free money in CFA francs to your "
-"relatives in Benin. For transactions made in another currency, a conversion "
-"fee may apply."
+"From your GandokinTché account, send free money, in CFA francs to your "
+"relatives in Benin."
 
-#: tarif.php:53
+#: tarif.php:89
 msgid "Ouvrir ou Fermer un compte"
 msgstr "Open or Close an account"
 
-#: tarif.php:54
+#: tarif.php:90
 msgid ""
 "L'ouverture et la fermeture d'un compte chez GandokinTché, ainsi que "
 "l'intégration de notre solution de paiement, sont entièrement gratuites."
@@ -590,25 +741,154 @@ msgstr ""
 "The opening and closing of an account at GandokinTché, as well as the "
 "integration of our payment solution, are completely free."
 
-#: tarif.php:73
-msgid "Frais de Commission"
-msgstr "Commission fees"
+#: tarif.php:104 tarif.php:120
+msgid "Grille tarifaire sur recharge de compte"
+msgstr "Fee schedule on account recharge"
 
-#: tarif.php:75
-msgid "/dépôt de cash sur son compte"
-msgstr "/ cash deposit on his account"
-
-#: tarif.php:79
+#: tarif.php:107 tarif.php:123
 msgid ""
-"Une commission unique de 10% qui ne s’applique qu’au dépôt de cash sur son "
-"compte et qui facilite le quotidien de tous en donnant accès aux services "
-"sécurisés à distance comme réservé un trajet en ligne ou encore effectuer "
-"des achats en ligne."
+"Une commission unique suivant un grille qui ne s’applique qu’au dépôt de "
+"cash sur son compte et qui facilite le quotidien de tous en donnant accès "
+"aux services sécurisés à distance comme réservé un trajet en ligne ou encore "
+"effectuer des achats en ligne."
 msgstr ""
-"A single 10% commission that only applies to the deposit of cash on his "
-"account and which facilitates the daily life of all by giving access to "
-"secure remote services such as online travel or online shopping."
+"A single commission based on a grid that only applies to the deposit of cash "
+"on his account and which facilitates the daily life of all by giving access "
+"to remote secure services such as reserved an online trip or make purchases "
+"online."
 
-#: tarif.php:81
-msgid "Créez un compte"
-msgstr "Sign Up"
+#: tarif.php:109 tarif.php:125
+msgid "Télécharger la grille"
+msgstr "Download the fee schedule"
+
+#: tarif.php:133
+msgid "Rechargez votre compte maintenant chez un distributeur !"
+msgstr "Recharge your account now at a distributor!"
+
+#: tarif.php:135
+msgid "Consultez votre solde"
+msgstr "Check your balance"
+
+#: virement.php:236
+msgid "Effectuez vos transferts d'argent "
+msgstr "Make your money transfers "
+
+#: virement.php:236
+msgid "en clin d'œil."
+msgstr "in a wink."
+
+#: virement.php:252
+msgid "Facile et Rapide"
+msgstr "Easy and fast"
+
+#: virement.php:255
+msgid ""
+"Des milliers de personnes ont choisi GandokinTché pour une bonne raison : Sa "
+"simplicité, sa flexibilité. Transférer de l'argent avec GandokinTché plus "
+"rapidement qu'en sortant votre portefeuille."
+msgstr ""
+"Thousands of people have chosen GandokinTché for a good reason: Its "
+"simplicity, its flexibility. Transfer money with GandokinTché faster than "
+"taking out your wallet."
+
+#: virement.php:271 virement.php:283
+msgid "Faite un virement d'argent en toute sécurité"
+msgstr "Make a safe transfer of money"
+
+#: virement.php:274 virement.php:286
+msgid ""
+"Pas besoin de communiquer votre identifiant à votre destinataire, envoyez-"
+"lui juste l'image de votre QRcode et le tout est joué. "
+msgstr ""
+"No need to communicate your identifier to your recipient, just send him the "
+"image of your QRcode and everything is played. "
+
+#: virement.php:308
+msgid "Nous sauvegardons une trace de vos transferts"
+msgstr "We save a record of your transfers"
+
+#: virement.php:311
+msgid ""
+"Envoyez de l'argent l'esprit tranquille, nous pouvons protégeons et "
+"sauvegardons vos transferts. Si vous rencontrez des difficultés lors d'un "
+"transfert, nous ferons notre possible pour vous aider"
+msgstr ""
+"Send money with peace of mind, we can protect and save your transfers. If "
+"you encounter difficulties during a transfer, we will do our best to help you"
+
+#: virement.php:322
+msgid ""
+"En envoyant de l'argent, vous ne payez pas de frais supplémentaires. Il n'y "
+"a ni frais cachés, ni frais de traitement. Profitez juste du service de "
+"transfert, et c'est tout. "
+msgstr ""
+"By sending money, you do not pay any additional fees. There are no hidden "
+"fees or processing fees. Just enjoy the transfer service, and that's it. "
+
+#~ msgid ""
+#~ "L'API de GandokinTché fournir un certain niveau d'abstration au "
+#~ "développeur, c'est-à-dire qu'elle lui masque la complexité de l'accès à "
+#~ "notre système en proposant un jeu de fonctions standard dont seuls les "
+#~ "paramètres et les valeurs retournées sont connus"
+#~ msgstr ""
+#~ "The GandokinTché API provides a certain level of abstraction to the "
+#~ "developer, ie it masks the complexity of the access to our system by "
+#~ "proposing a set of standard functions whose only parameters and values "
+#~ "returned are known"
+
+#~ msgid "1.Intégration sur Application Android"
+#~ msgstr "1.Integration on Android Application"
+
+#~ msgid "Lancer le téléchargement"
+#~ msgstr "Launch the download"
+
+#~ msgid "2. Intégration sur Application IOS"
+#~ msgstr "2. Integration on IOS Application"
+
+#~ msgid "3. Intégration sur Application web (PHP)"
+#~ msgstr "3. Integration on Web Application (PHP)"
+
+#~ msgid "4.Intégration sur Application web (Javascript)"
+#~ msgstr "4.Integration on Web Application (Javascript)"
+
+#~ msgid "Voir la documentation"
+#~ msgstr "See the documentation"
+
+#~ msgid "Offres"
+#~ msgstr "Offers"
+
+#~ msgid "Contact"
+#~ msgstr "Contact"
+
+#~ msgid "Votre nom"
+#~ msgstr "Your name"
+
+#~ msgid "Sujet"
+#~ msgstr "Topic"
+
+#~ msgid "FACTURATION"
+#~ msgstr "BILLING"
+
+#~ msgid "Un outil qui permet d'établir une facture à vos clients en un clic"
+#~ msgstr "A tool that allows you to invoice your customers in one click"
+
+#~ msgid "E-COMMERCE"
+#~ msgstr "E-COMMERCE"
+
+#~ msgid "Poser votre question"
+#~ msgstr "Ask your question"
+
+#~ msgid "Recherche"
+#~ msgstr "Research"
+
+#~ msgid "Contactez nous pour plus d'information."
+#~ msgstr "Contact us for more information."
+
+#~ msgid "Frais de Commission"
+#~ msgstr "Commission fees"
+
+#~ msgid "/dépôt de cash sur son compte"
+#~ msgstr "/ cash deposit on his account"
+
+#~ msgid "Créez un compte"
+#~ msgstr "Sign Up"

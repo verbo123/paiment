@@ -3,12 +3,13 @@ include 'Tools/database.php';
 require 'Tools/fonction.php';
 //compter_visite();
 
+//$jsonip = file_get_contents('http://getcitydetails.geobytes.com/GetCityDetails?fqcn='.get_user_ip());
+//$dataip = json_decode($jsonip);
 ?>
 <!DOCTYPE html>
-<html lang="en">
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<html lang="fr">
 <head>
-    <meta charset="utf-8">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -35,6 +36,8 @@ require 'Tools/fonction.php';
     <link href="assets/vendors/owl-carousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/alertb.css" rel="stylesheet">
+
     <link href="assets/css/theme.css" rel="stylesheet">
     <link href="assets/css/swiper.css" rel="stylesheet">
     <link href="assets/css/parsley.css" rel="stylesheet">
@@ -160,20 +163,20 @@ require 'Tools/fonction.php';
                                     {
                                         if($_COOKIE["lang"] == "en_US")
                                         {
-                                            echo '<a class="dropdown-item"  href="javascript:lange(\'fr_FR\')">';
-                                            echo '<img style="max-width: 30px;" src="assets/img/france.png">';
+                                            echo '<a style="margin-left: 20px;" class="dropdown-item"  href="javascript:lange(\'fr_FR\')">';
+                                            echo '<img style="max-width: 20px;" src="assets/img/france.png">';
                                             echo '<span style="margin-left:10px">French</span>';
                                             echo '</a>';
                                         }elseif ($_COOKIE["lang"] == "fr_FR")
                                         {
-                                            echo '<a class="dropdown-item"  href="javascript:lange(\'en_US\')">';
-                                            echo '<img style="max-width: 30px;" src="assets/img/engl.png">';
+                                            echo '<a style="margin-left: 20px;" class="dropdown-item"  href="javascript:lange(\'en_US\')">';
+                                            echo '<img style="max-width: 20px;" src="assets/img/engl.png">';
                                             echo '<span style="margin-left:10px">Anglais</span>';
                                             echo '</a>';
                                         }
                                     }else{
-                                        echo '<a class="dropdown-item"  href="javascript:lange(\'en_US\')">';
-                                        echo '<img style="max-width: 30px;" src="assets/img/engl.png">';
+                                        echo '<a style="margin-left: 20px;" class="dropdown-item"  href="javascript:lange(\'en_US\')">';
+                                        echo '<img style="max-width: 20px;" src="assets/img/engl.png">';
                                         echo '<span style="margin-left:10px">Anglais</span>';
                                         echo '</a>';
                                     }

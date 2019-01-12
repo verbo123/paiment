@@ -1,6 +1,6 @@
 <?php
 require 'localization.php';
-$title=ma_tra("Paiement en ligne");
+$title=ma_tra("Envoyez de l'argent");
 require 'pages/includes/htmlheader.php';
 ?>
 <link type="text/css" href="assets/devop/css/argon.css?v=1.0.1" rel="stylesheet">
@@ -186,24 +186,57 @@ require 'pages/includes/htmlheader.php';
         max-width: 500px;
     }
 
-    .footer_area{
-        margin-top: unset;
+@media (min-width: 1000px)
+{
+    #qr{
+        max-width: 600px;
     }
+    .lgdata{
+        display: block;
+    }
+
+    .smdata{
+        display: none;
+    }
+}
+
+@media (max-width: 1000px)
+{
+    #qr{
+        display: none;
+    }
+
+    .lgdata{
+        display: none;
+    }
+
+    .smdata{
+        display: block;
+    }
+}
+
+@media (max-width: 800px)
+{
+    .choose_us_area {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 800px)
+{
+    .choose_us_area {
+        margin-top: 0;
+    }
+}
 </style>
 
-<div id="header_pay" class=" major special" >
+<div id="header_vir" class=" major special" >
 
             <div class="letxt ve_center">
-                <h2 style="font-size: 25px"><?php echo ma_tra("Effectuez vos paiements en ligne ")?> <?php echo ma_tra("en quelque clic.")?></h2>
-                <p style="color: white; font-family: sans-serif;letter-spacing: 0.1em">
-                    <?php echo ma_tra("Payez de manière sécurisée sur des millions de sites e-commerce.")?><br>
-                    <?php echo ma_tra("Grâce à votre compte GandokinTché, vous n'avez pas besoin de ")?><br>
-                    <?php echo ma_tra("voir le marchand avant de lui faire un transfert,son code")?><br>
-                    <?php echo ma_tra("d'opération ou son QRcode suffisent.");?>
-                </p>
+                <h2 style="font-size: 25px"><?php echo ma_tra("Effectuez vos transferts d'argent ")?> <br> <?php echo ma_tra("en clin d'œil.")?></h2>
                 <div class="call-to-action">
                     <button style="width: 300px; height: 50px" type="submit" class=" ouvrir btn submint_btn form-control">
-                        <?php echo ma_tra("Créer un compte")?>
+                        <?php echo ma_tra("Ouvrir un compte gratuitement")?>
                     </button>
                 </div>
 
@@ -216,69 +249,67 @@ require 'pages/includes/htmlheader.php';
     <div class="container">
         <div class="main_title">
             <div class="tit">
-                <span style="color: #0d1c3f;font-size:25px;font-weight: 600;"><?php echo ma_tra("Le shopping est mieux chez soi") ?></span>
+                <span style="color: #0d1c3f;font-size:25px;font-weight: 600;"><?php echo ma_tra("Facile et Rapide") ?></span>
             </div>
             <p style="margin-top: 20px">
-                <?php echo ma_tra("Payez des biens et services dans des boutiques en ligne sans communiquer vos informations financière au vendeur.C'est simple, très rapide et plus sécurisé.")?>
+                <?php echo ma_tra("Des milliers de personnes ont choisi GandokinTché pour une bonne raison : Sa simplicité, sa flexibilité. Transférer de l'argent avec GandokinTché plus rapidement qu'en sortant votre portefeuille.")?>
             </p>
         </div>
     </div>
 
 </section>
 
-
-<section style="padding-top: 0;padding-bottom: 0"  class="install_app_area">
-
-    <div class="col-md-6">
-        <div class="row">
-            <div class="install_mockup_img">
-                <img src="assets/img/2.png" alt="">
-            </div>
+<section id="woo">
+    <div style="width: 100%;" class="lgdata row">
+        <div  class="col-md-6">
+            <img id="qr" src="assets/img/qrcodes.png" alt="">
         </div>
-    </div>
 
-    <div class="col-md-6">
-        <div class="row">
-            <div class="install_left_content">
-                <div class="install_content">
-                    <h5> <?php echo ma_tra("Vos achats partout au Bénin et dans le monde entier")?>.</h5>
-                    <p>
-                        <?php echo ma_tra("Inutile de prendre de prendre un taxi ou un billet d'avion pour faire votre shopping dans le monde entier. Faites votre shopping dans des boutiques en ligne en quelques clics seulement avec votre compte GnadokinTché.")?>
-                    </p>
-                    <button style="width: 300px; height: 50px" type="submit" class=" ouvrir btn submint_btn form-control">
-                        <?php echo ma_tra("Créer un compte maintenant")?>
-                    </button>
+        <div style="margin-top: 10%" class="col-md-6">
+            <div style="margin-left: 50px" class="left_title">
+                <div class="tit">
+                    <span style="color: #fff;font-size:25px;font-weight: 600;"><?php echo ma_tra("Faite un virement d'argent en toute sécurité") ?></span>
                 </div>
-
+                <p style="color: #fff">
+                    <?php echo ma_tra("Pas besoin de communiquer votre identifiant à votre destinataire, envoyez-lui juste l'image de votre QRcode et le tout est joué. ")?>
+                </p>
+                <a style="font-size: 16px;text-transform: inherit;" class="badge badge-pill badge-white" href="https://dashboard.gandokintche.com/virement"><?php echo ma_tra("Envoyez de l'argent")?></a>
             </div>
         </div>
     </div>
 
-    <div class="bg-gradient-warning2">
-        <div id="cont" class="container">
-               <span>
-                   "<?php echo ma_tra("Je ne m'inquiète plus quand j'achète sur des boutiques en ligne et en plus, je n'ai pas besoin d'être présent physiquement")?>".
-               </span>
+    <div  class="smdata left_title">
+        <div class="tit">
+            <span style="color: #fff;font-size:25px;font-weight: 600;"><?php echo ma_tra("Faite un virement d'argent en toute sécurité") ?></span>
         </div>
+        <p style="color: #fff">
+            <?php echo ma_tra("Pas besoin de communiquer votre identifiant à votre destinataire, envoyez-lui juste l'image de votre QRcode et le tout est joué. ")?>
+        </p>
+        <a style="font-size: 16px;text-transform: inherit;" class="badge badge-pill badge-white" href="https://dashboard.gandokintche.com/virement"><?php echo ma_tra("Envoyez de l'argent")?></a>
     </div>
 </section>
 
-
+<!--<section style="" class="app_screen_area" id="screenshot">-->
+<!--    <div class="container">-->
+<!--        <div class="app_screen_inner">-->
+<!---->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
 <section style="background: none;" class="choose_us_area">
         <div style="float: right" id="co" class="col-md-6">
-                <img id="im" src="assets/img/screenshot_1.png" alt="">
+                <img id="im" src="assets/img/lis.png" alt="">
         </div>
 
     <div class="col-md-6">
         <div class="right_choose_image">
             <div style="margin-left: 30px" class="left_title">
                 <div class="tit">
-                    <span style="color: #0d1c3f;font-size:25px;font-weight: 600;"><?php echo ma_tra("Nous sauvegardons une trace de vos achats") ?></span>
+                    <span style="color: #0d1c3f;font-size:25px;font-weight: 600;"><?php echo ma_tra("Nous sauvegardons une trace de vos transferts") ?></span>
                 </div>
                 <p>
-                    <?php echo ma_tra("Faites votre shopping en ligne l'esprit tranquille, nous pouvons protéger et sauvegarder vos achats. Si vous rencontrez des difficultés lors d'une commande, nous ferons notre possible pour vous aider")?>.
+                    <?php echo ma_tra("Envoyez de l'argent l'esprit tranquille, nous pouvons protégeons et sauvegardons vos transferts. Si vous rencontrez des difficultés lors d'un transfert, nous ferons notre possible pour vous aider")?>.
                 </p>
-                <a style="font-size: 16px;text-transform: inherit;" class="badge badge-pill badge-warning" href="https://www.dashboard.gandokintche.com/shop"><?php echo ma_tra("Consulter l'historique de mes achats")?></a>
             </div>
         </div>
     </div>
@@ -288,7 +319,7 @@ require 'pages/includes/htmlheader.php';
             <h1 id="frais"><?php echo ma_tra("Pas de frais cachés.")?></h1>
 
                <span>
-                   <?php echo ma_tra("En payant sur des boutiques en ligne,  vous ne payez pas de frais supplémentaires. Il n'y a ni frais cachés, ni frais de traitement. Profitez de votre shopping, et c'est tout. ")?>.
+                   <?php echo ma_tra("En envoyant de l'argent, vous ne payez pas de frais supplémentaires. Il n'y a ni frais cachés, ni frais de traitement. Profitez juste du service de transfert, et c'est tout. ")?>
                </span>
         </div>
     </div>
@@ -303,6 +334,6 @@ require 'pages/includes/htmlfooter.php';
 
 <script type="text/javascript">
     $('.ouvrir').click(function () {
-       window.location.href="https://www.dashboard.gandokintche.com/register";
+       window.location.href="https://dashboard.gandokintche.com/register";
     });
 </script>

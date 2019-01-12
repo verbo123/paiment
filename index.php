@@ -341,7 +341,7 @@ require 'pages/includes/htmlheader.php';
                                 <p>
                                     <?php echo ma_tra("Disposé d’un outil de facturation au formats PDF lié à chaque transaction réalisée sur votre site d’e-commerce afin d’assurer la traçabilité de toutes vos interactions avec vos clients.")?>
                                 </p>
-                                <a style="font-size: 12px;" href="http://dashboard.gandokintche.com/invoice" class="badge badge-pill badge-warning"><?php echo ma_tra("générer une facture");?></a>
+                                <a style="font-size: 12px;" href="https://dashboard.gandokintche.com/invoice" class="badge badge-pill badge-warning"><?php echo ma_tra("générer une facture");?></a>
                             </div>
                         </div>
                     </div>
@@ -514,25 +514,32 @@ require 'pages/includes/htmlheader.php';
             <div class="user_slider owl-carousel">
                 <div class="item">
                     <i class="fa fa-quote-left" aria-hidden="true"></i>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <a href="#"><h4>Mr. Verbeck DEGBESSE</h4></a>
-                    <h5>CEO, Hazrat Group</h5>
-                    <img class="img-circle" src="assets/img/user/user-1.png" alt="">
+                    <p style="padding-bottom: 5px">
+                        <?php
+                        echo ma_tra("Facile, rapide et sécuriser à utiliser. En tant que développeur, je le recommande vivement à tout les monde avec une documentation complète permettant une intégration facile sur des sites e-commerce.")
+                        ?>
+                    </p>
+                    <a href="#"><h4>D. Verbeck</h4></a>
+                    <img style="max-width: 50px;" class="img-circle" src="assets/img/user/avatar.png" alt="">
                 </div>
                 <div class="item">
                     <i class="fa fa-quote-left" aria-hidden="true"></i>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <a href="#"><h4>Mr. Jonathon Smith</h4></a>
-                    <h5>CEO, Hazrat Group</h5>
-                    <img class="img-circle" src="assets/img/user/user-1.png" alt="">
+                    <p style="padding-bottom: 5px">
+                        <?php
+                        echo  ma_tra("Jai essayé GandokinTché, et je suis ravi de l'avoir comme compagnons dans mes activités financière.")
+                        ?>
+
+                    </p>
+                    <a href="#"><h4> A. Morrison</h4></a>
+                    <img style="max-width: 50px;" class="img-circle" src="assets/img/user/avatar.png" alt="">
                 </div>
-                <div class="item">
-                    <i class="fa fa-quote-left" aria-hidden="true"></i>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <a href="#"><h4>Mr. Jonathon Smith</h4></a>
-                    <h5>CEO, Hazrat Group</h5>
-                    <img class="img-circle" src="assets/img/user/user-1.png" alt="">
-                </div>
+<!--                <div class="item">-->
+<!--                    <i class="fa fa-quote-left" aria-hidden="true"></i>-->
+<!--                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>-->
+<!--                    <a href="#"><h4>Mr. Jonathon Smith</h4></a>-->
+<!--                    <h5>CEO, Hazrat Group</h5>-->
+<!--                    <img class="img-circle" src="assets/img/user/user-1.png" alt="">-->
+<!--                </div>-->
             </div>
         </div>
     </div>
@@ -908,8 +915,6 @@ require 'pages/includes/htmlheader.php';
     </div>
 </section>
 <!--================End Latest Blog Area =================-->
-
-
 
 <?php
 

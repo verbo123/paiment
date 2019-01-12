@@ -194,7 +194,7 @@ require 'pages/includes/htmlheader.php';
 <div id="header_pay" class=" major special" >
 
             <div class="letxt ve_center">
-                <h2 style="font-size: 25px"><?php echo ma_tra("Effectuez vos paiements en ligne ")?> <?php echo ma_tra("en quelque clic.")?></h2>
+                <h2 style="font-size: 25px"><?php echo ma_tra("Effectuez vos paiements en ligne ")?> <?php echo ma_tra("en quelques clics.")?></h2>
                 <p style="color: white; font-family: sans-serif;letter-spacing: 0.1em">
                     <?php echo ma_tra("Payez de manière sécurisée sur des millions de sites e-commerce.")?><br>
                     <?php echo ma_tra("Grâce à votre compte GandokinTché, vous n'avez pas besoin de ")?><br>
@@ -278,7 +278,7 @@ require 'pages/includes/htmlheader.php';
                 <p>
                     <?php echo ma_tra("Faites votre shopping en ligne l'esprit tranquille, nous pouvons protéger et sauvegarder vos achats. Si vous rencontrez des difficultés lors d'une commande, nous ferons notre possible pour vous aider")?>.
                 </p>
-                <a style="font-size: 16px;text-transform: inherit;" class="badge badge-pill badge-warning" href="https://www.dashboard.gandokintche.com/shop"><?php echo ma_tra("Consulter l'historique de mes achats")?></a>
+                <a style="font-size: 16px;text-transform: inherit;" class="badge badge-pill badge-warning" href="https://dashboard.gandokintche.com/shop"><?php echo ma_tra("Consultez l'historique de mes achats")?></a>
             </div>
         </div>
     </div>
@@ -303,6 +303,6 @@ require 'pages/includes/htmlfooter.php';
 
 <script type="text/javascript">
     $('.ouvrir').click(function () {
-       window.location.href="https://www.dashboard.gandokintche.com/register";
+       window.location.href="https://dashboard.gandokintche.com/register";
     });
 </script>

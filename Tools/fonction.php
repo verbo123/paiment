@@ -14,7 +14,6 @@ function verify($table,$field, $code)
     }
 }
 
-
 function get_user_ip() {
     // IP si internet partagé
     if (isset($_SERVER['HTTP_CLIENT_IP'])) {
@@ -30,7 +29,7 @@ function get_user_ip() {
     }
 
 
-    //  197.234.221.157
+    //return  "197.234.221.157";
 }
 
 
