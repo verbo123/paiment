@@ -12,6 +12,10 @@ require 'Tools/fonction.php';
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Système de paiement en ligne au Bénin">
+    <meta name="author" content="Verbeck DEGBESSE">
+    <meta name="keywords" content="paiement, en ligne, Bénin, payez, gandokintché">
 
     <link rel="icon" href="assets/img/fvicon.png" type="image/x-icon" />
 
@@ -90,7 +94,7 @@ require 'Tools/fonction.php';
                         <li class="js-item-menu">
                             <a href="#" style="color: #0d1c3f;font-weight: 700;" ><?php echo ma_tra("SOLUTIONS")?></a>
                             <ul class="mess-dropdown js-dropdown row" style="padding: 30px">
-                                <div class="">
+                                <div class="sol1">
                                     <div style="display: block" class="row">
                                         <div class="col-md-3">
                                             <div class="satisfaction_item">
@@ -117,6 +121,19 @@ require 'Tools/fonction.php';
                                             <a href="virement"><h4 style="padding-bottom: 0;color: #0d1c3f"><?php echo ma_tra("Envoyez de l'argent")?></h4></a>
                                             <p><?php echo ma_tra("Envoyez de l'argent à vos proches partout au Bénin")?></p>
                                         </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="sol2">
+                                    <div style="margin-bottom: 10px" class="">
+                                        <a href="payment"><h4 style="padding-bottom: 0;color: #0d1c3f"><?php echo ma_tra("Paiement en ligne")?></h4></a>
+                                        <p><?php echo ma_tra("Des paiements dans des boutiques en ligne")?></p>
+                                    </div>
+
+                                    <div class="">
+                                        <a href="virement"><h4 style="padding-bottom: 0;color: #0d1c3f"><?php echo ma_tra("Envoyez de l'argent")?></h4></a>
+                                        <p><?php echo ma_tra("Envoyez de l'argent à vos proches partout au Bénin")?></p>
                                     </div>
 
                                 </div>
@@ -209,6 +226,25 @@ require 'Tools/fonction.php';
 
 <style type="text/css">
 
+    @media (max-width: 991px) {
+        .sol1{
+            display: none;
+        }
+
+        .sol2{
+            display: block;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .sol1{
+            display: block;
+        }
+
+        .sol2{
+            display: none;
+        }
+    }
 
 
     .mega-dropdown {

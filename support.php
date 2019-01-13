@@ -32,7 +32,6 @@ require 'pages/includes/htmlheader.php';
     <div class="container">
         <div class="main_title">
             <h2><?php echo ma_tra("FOIRES AUX QUESTIONS")?></h2>
-<!--            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim.</p>-->
         </div>
         <div class="row">
             <div class="col-md-7">
@@ -50,10 +49,10 @@ require 'pages/includes/htmlheader.php';
                             </div>
                             <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                                 <div class="panel-body">
-                                    Pour récupérer votre mot de passe, allez sur l'interface de connexion, puis cliquez sur <b>Mot de passe oublié ?</b>
-                                    Entrer ensuite votre email de connexion puis valider...Vous recevrez automatiquement après quelque seconde, un message
-                                    dans votre boîte email. Cliquer sur le lien dans le message envoyé...Si tout s'est bien passé, vous aurez une interface demandant
-                                    votre nouveau mot de passe puis confirmation.
+                                    <?php echo ma_tra("Pour récupérer votre mot de passe, allez sur l'interface de connexion, puis cliquez sur")?> <b><?php echo ma_tra("Mot de passe oublié ?")?></b>
+                                    <?php echo ma_tra("Entrer ensuite votre email de connexion puis valider...Vous recevrez automatiquement après quelque seconde, un message")?>
+                                    <?php echo ma_tra("dans votre boîte email. Cliquer sur le lien dans le message envoyé...Si tout s'est bien passé, vous aurez une interface demandant")?>
+                                    <?php echo ma_tra("votre nouveau mot de passe puis confirmation.")?>
 
 
                                 </div>
@@ -72,8 +71,8 @@ require 'pages/includes/htmlheader.php';
                             </div>
                             <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                                 <div class="panel-body">
-                                    Il n'y aucun frais lorsque vous effectué des opératons avec Gandokintché (achat en ligne, virement)...
-                                    Un prélèvement unique (selon la tranche d'argent déposé) est effectué lors du recharge de votre compte
+                                    <?php echo ma_tra("Il n'y aucun frais lorsque vous effectué des opératons avec Gandokintché (achat en ligne, virement)...")?>
+                                    <?php echo ma_tra("Un prélèvement unique (selon la tranche d'argent déposé) est effectué lors du recharge de votre compte")?>
                                 </div>
                             </div>
                         </div>
@@ -89,7 +88,43 @@ require 'pages/includes/htmlheader.php';
                             </div>
                             <div id="collapsefour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfour">
                                 <div class="panel-body">
-                                    Vous ne pouvez pas annuler un paiement...Néamoins, vous pouvez nous contactez lorsque vous êtes confronté à cette situation.
+                                    <?php echo ma_tra("Vous ne pouvez pas annuler un paiement...Néamoins, vous pouvez nous contactez lorsque vous êtes confronté à cette situation.")?>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="five">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsefive" aria-expanded="false" aria-controls="collapsefour">
+                                        <?php echo ma_tra("Quels sont les avantages de votre services ?")?>
+                                        <i class="fa fa-minus" aria-hidden="true"></i>
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapsefive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="five">
+                                <div class="panel-body">
+                                    <?php echo ma_tra("Avec GandokinTché, vous pouvez non seulement acheté dans des boutiques en ligne, mais aussi dans boutiques physique. En plus, le transfert d'argent est simple, rapide et sûr. Vous pouvez nous contacter pour avoir d'ample informations.")?>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="sixe">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsesixe" aria-expanded="false" aria-controls="collapsefour">
+                                        <?php echo ma_tra("Quels sont vos cibles ?")?>
+                                        <i class="fa fa-minus" aria-hidden="true"></i>
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapsesixe" class="panel-collapse collapse" role="tabpanel" aria-labelledby="sixe">
+                                <div class="panel-body">
+                                    <?php echo ma_tra("Que vous soyez un particulier, un commerçant, vous pouvez utiliser nos services dans vos différentes activités.")?>
                                 </div>
                             </div>
                         </div>

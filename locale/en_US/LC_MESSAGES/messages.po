@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: site\n"
-"POT-Creation-Date: 2019-01-06 08:59+0100\n"
-"PO-Revision-Date: 2019-01-06 09:58+0100\n"
+"POT-Creation-Date: 2019-01-12 17:23+0100\n"
+"PO-Revision-Date: 2019-01-12 17:28+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_US\n"
@@ -15,7 +15,7 @@ msgstr ""
 "X-Poedit-KeywordsList: ma_tra\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: developpeur.php:3 pages/includes/htmlheader.php:130
+#: developpeur.php:3 pages/includes/htmlheader.php:143
 msgid "Partenaires/Développeurs"
 msgstr "API / Developers"
 
@@ -259,7 +259,7 @@ msgstr ""
 msgid "la croissance de votre business."
 msgstr "the growth of your business."
 
-#: index.php:245 pages/includes/htmlheader.php:134
+#: index.php:245 pages/includes/htmlheader.php:147
 msgid "TARIFS"
 msgstr "PRICES"
 
@@ -421,12 +421,13 @@ msgid "Solutions"
 msgstr "Solutions"
 
 #: pages/includes/htmlfooter.php:47 pages/includes/htmlheader.php:103
-#: payment.php:3
+#: pages/includes/htmlheader.php:126 payment.php:3
 msgid "Paiement en ligne"
 msgstr "Online payment"
 
 #: pages/includes/htmlfooter.php:48 pages/includes/htmlheader.php:117
-#: virement.php:3 virement.php:276 virement.php:288
+#: pages/includes/htmlheader.php:131 virement.php:3 virement.php:276
+#: virement.php:288
 msgid "Envoyez de l'argent"
 msgstr "Send money"
 
@@ -435,7 +436,7 @@ msgid "FAQ"
 msgstr "FAQ"
 
 #: pages/includes/htmlfooter.php:60 pages/includes/htmlfooter.php:127
-#: pages/includes/htmlheader.php:133 tarif.php:3
+#: pages/includes/htmlheader.php:146 tarif.php:3
 msgid "Tarifs"
 msgstr "Prices"
 
@@ -523,23 +524,23 @@ msgstr "Secured payment in Benin"
 msgid "SOLUTIONS"
 msgstr "SOLUTIONS"
 
-#: pages/includes/htmlheader.php:104
+#: pages/includes/htmlheader.php:104 pages/includes/htmlheader.php:127
 msgid "Des paiements dans des boutiques en ligne"
 msgstr "Payments in online shops"
 
-#: pages/includes/htmlheader.php:118
+#: pages/includes/htmlheader.php:118 pages/includes/htmlheader.php:132
 msgid "Envoyez de l'argent à vos proches partout au Bénin"
 msgstr "Send money to your loved ones everywhere in Benin"
 
-#: pages/includes/htmlheader.php:131
+#: pages/includes/htmlheader.php:144
 msgid "PARTENAIRES & API"
 msgstr "PARTNERS & API"
 
-#: pages/includes/htmlheader.php:137
+#: pages/includes/htmlheader.php:150
 msgid "FAQ & SUPPORTS"
 msgstr "FAQ & SUPPORTS"
 
-#: pages/includes/htmlheader.php:191 pages/includes/htmlheader.php:193
+#: pages/includes/htmlheader.php:204 pages/includes/htmlheader.php:206
 msgid "Accédez à votre compte"
 msgstr "Access to your account"
 
@@ -645,39 +646,128 @@ msgstr ""
 msgid "Support"
 msgstr "Support"
 
-#: support.php:11
-msgid "Besoins d'aide ?"
-msgstr "For help ?"
-
 #: support.php:34
 msgid "FOIRES AUX QUESTIONS"
 msgstr "FREQUENTLY ASKED QUESTIONS"
 
-#: support.php:113
+#: support.php:44
+msgid "J'ai oublié mon mot de passe. Comment le récupérer ?"
+msgstr "I forgot my password. How to recover it?"
+
+#: support.php:52
+msgid ""
+"Pour récupérer votre mot de passe, allez sur l'interface de connexion, puis "
+"cliquez sur"
+msgstr "To recover your password, go to the login interface and click"
+
+#: support.php:52
+msgid "Mot de passe oublié ?"
+msgstr "Forgot your password ?"
+
+#: support.php:53
+msgid ""
+"Entrer ensuite votre email de connexion puis valider...Vous recevrez "
+"automatiquement après quelque seconde, un message"
+msgstr ""
+"Then enter your login email and validate ... You will automatically receive "
+"after a second, a message"
+
+#: support.php:54
+msgid ""
+"dans votre boîte email. Cliquer sur le lien dans le message envoyé...Si tout "
+"s'est bien passé, vous aurez une interface demandant"
+msgstr ""
+"in your email box. Click on the link in the message sent ... If everything "
+"went well, you will have an interface requesting"
+
+#: support.php:55
+msgid "votre nouveau mot de passe puis confirmation."
+msgstr "your new password then confirmation."
+
+#: support.php:66
+msgid "Quels sont les frais pour le compte GandokinTché ?"
+msgstr "What are the fees for the GandokinTché account?"
+
+#: support.php:74
+msgid ""
+"Il n'y aucun frais lorsque vous effectué des opératons avec Gandokintché "
+"(achat en ligne, virement)..."
+msgstr ""
+"There is no charge when you perform operations with Gandokintché (online "
+"purchase, transfer) ..."
+
+#: support.php:75
+msgid ""
+"Un prélèvement unique (selon la tranche d'argent déposé) est effectué lors "
+"du recharge de votre compte"
+msgstr ""
+"A single levy (depending on the amount of money deposited) is made when you "
+"reload your account"
+
+#: support.php:83
+msgid "Comment annuler un paiement ?"
+msgstr "How to cancel a payment?"
+
+#: support.php:91
+msgid ""
+"Vous ne pouvez pas annuler un paiement...Néamoins, vous pouvez nous "
+"contactez lorsque vous êtes confronté à cette situation."
+msgstr ""
+"You can not cancel a payment ... However, you can contact us when you are "
+"faced with this situation."
+
+#: support.php:101
+msgid "Quels sont les avantages de votre services ?"
+msgstr "What are the benefits of your services?"
+
+#: support.php:109
+msgid ""
+"Avec GandokinTché, vous pouvez non seulement acheté dans des boutiques en "
+"ligne, mais aussi dans boutiques physique. En plus, le transfert d'argent "
+"est simple, rapide et sûr. Vous pouvez nous contacter pour avoir d'ample "
+"informations."
+msgstr ""
+"With GandokinTché, you can not only buy in online shops, but also in "
+"physical shops. In addition, the transfer of money is simple, fast and safe. "
+"You can contact us for more information."
+
+#: support.php:119
+msgid "Quels sont vos cibles ?"
+msgstr "What are your targets?"
+
+#: support.php:127
+msgid ""
+"Que vous soyez un particulier, un commerçant, vous pouvez utiliser nos "
+"services dans vos différentes activités."
+msgstr ""
+"Whether you are an individual or a merchant, you can use our services in "
+"your various activities."
+
+#: support.php:149
 msgid "Autres manières d'obtenir d'aide"
 msgstr "Other ways to get help"
 
-#: support.php:121
+#: support.php:157
 msgid "Forum d'aide"
 msgstr "Help Forum"
 
-#: support.php:122
+#: support.php:158
 msgid "Trouvez des réponses et participez à la discussion"
 msgstr "Find answers and join the discussion"
 
-#: support.php:130
+#: support.php:166
 msgid "Gestionnaire de litige"
 msgstr "Litigation Manager"
 
-#: support.php:131
+#: support.php:167
 msgid "Résolver les problème de transaction"
 msgstr "Solve transactions problems"
 
-#: support.php:139
+#: support.php:175
 msgid "Contactez-nous"
 msgstr "Contact Us"
 
-#: support.php:140
+#: support.php:176
 msgid "Contactez le service clientèle"
 msgstr "Contact customer service"
 
@@ -824,6 +914,9 @@ msgid ""
 msgstr ""
 "By sending money, you do not pay any additional fees. There are no hidden "
 "fees or processing fees. Just enjoy the transfer service, and that's it. "
+
+#~ msgid "Besoins d'aide ?"
+#~ msgstr "For help ?"
 
 #~ msgid ""
 #~ "L'API de GandokinTché fournir un certain niveau d'abstration au "
